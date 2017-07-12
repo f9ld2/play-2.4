@@ -3,7 +3,6 @@ package modules;
 import com.google.inject.name.Names;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import play.db.Database;
-import service.UserMapper;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
@@ -20,7 +19,7 @@ public class MyBatisModule extends org.mybatis.guice.MyBatisModule {
                 to(true);
         bindDataSourceProviderType(PlayDataSourceProvider.class);
         bindTransactionFactoryType(JdbcTransactionFactory.class);
-        addMapperClass(UserMapper.class);
+        addMapperClasses("service");
     }
 
     /* Provides a {@link DataSource} from the {@link Database} which can be injected from Play. */
@@ -33,11 +32,9 @@ public class MyBatisModule extends org.mybatis.guice.MyBatisModule {
             this.db = db;
         }
 
-
         @Override
         public DataSource get() {
             return db.getDataSource();
         }
     }
-
 }
