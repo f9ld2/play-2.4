@@ -1,20 +1,13 @@
 @(users: List[model.User])
+@assets.put("stylesheets/index.css")
+@assets.put("javascript/index.js", "footer")
 
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <title>Users</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
-    </head>
-    <body>
-        @if(!users.isEmpty()) {
-            <ul>
-                @for(user <- users) {
-                    <li>@{user.getName()}</li>
-                }
-            </ul>
-        }
-    </body>
-</html>
+@main("Welcome to Play") {
+	@if(!users.isEmpty()) {
+        <ul>
+            @for(user <- users) {
+                <li>@{user.getName()}</li>
+            }
+        </ul>
+    }
+}

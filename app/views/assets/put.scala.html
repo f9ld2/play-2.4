@@ -1,0 +1,11 @@
+@(src: String, panel: String = "header")
+
+@{
+    var list = ctx().args.get(panel).asInstanceOf[List[String]];
+    if(list == null) {
+        list = new ArrayList[String]();
+        ctx().args.put(panel, list);
+    }
+
+    val added = list.add(src);
+}

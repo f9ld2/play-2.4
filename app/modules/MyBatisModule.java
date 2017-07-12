@@ -14,7 +14,7 @@ public class MyBatisModule extends org.mybatis.guice.MyBatisModule {
 
     @Override
     protected void initialize() {
-        environmentId("development");
+        environmentId("default");
         bindConstant().annotatedWith(
                 Names.named("mybatis.configuration.failFast")).
                 to(true);

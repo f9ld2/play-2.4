@@ -31,25 +31,18 @@ object users extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 
 Seq[Any](format.raw/*1.27*/("""
+"""),_display_(/*2.2*/assets/*2.8*/.put("stylesheets/index.css")),format.raw/*2.37*/("""
+"""),_display_(/*3.2*/assets/*3.8*/.put("javascript/index.js", "footer")),format.raw/*3.45*/("""
 
-"""),format.raw/*3.1*/("""<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <title>Users</title>
-        <link rel="stylesheet" media="screen" href=""""),_display_(/*8.54*/routes/*8.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*8.101*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*9.59*/routes/*9.65*/.Assets.versioned("images/favicon.png")),format.raw/*9.104*/("""">
-    </head>
-    <body>
-        """),_display_(/*12.10*/if(!users.isEmpty())/*12.30*/ {_display_(Seq[Any](format.raw/*12.32*/("""
-            """),format.raw/*13.13*/("""<ul>
-                """),_display_(/*14.18*/for(user <- users) yield /*14.36*/ {_display_(Seq[Any](format.raw/*14.38*/("""
-                    """),format.raw/*15.21*/("""<li>"""),_display_(/*15.26*/{user.getName()}),format.raw/*15.42*/("""</li>
-                """)))}),format.raw/*16.18*/("""
-            """),format.raw/*17.13*/("""</ul>
-        """)))}),format.raw/*18.10*/("""
-    """),format.raw/*19.5*/("""</body>
-</html>
+"""),_display_(/*5.2*/main("Welcome to Play")/*5.25*/ {_display_(Seq[Any](format.raw/*5.27*/("""
+	"""),_display_(/*6.3*/if(!users.isEmpty())/*6.23*/ {_display_(Seq[Any](format.raw/*6.25*/("""
+        """),format.raw/*7.9*/("""<ul>
+            """),_display_(/*8.14*/for(user <- users) yield /*8.32*/ {_display_(Seq[Any](format.raw/*8.34*/("""
+                """),format.raw/*9.17*/("""<li>"""),_display_(/*9.22*/{user.getName()}),format.raw/*9.38*/("""</li>
+            """)))}),format.raw/*10.14*/("""
+        """),format.raw/*11.9*/("""</ul>
+    """)))}),format.raw/*12.6*/("""
+""")))}),format.raw/*13.2*/("""
 """))
       }
     }
@@ -66,11 +59,11 @@ Seq[Any](format.raw/*1.27*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Jul 12 11:47:35 ICT 2017
+                  DATE: Wed Jul 12 11:53:56 ICT 2017
                   SOURCE: /Users/hoang-hd/Working/play-2.4/app/views/users.scala.html
-                  HASH: 1e0d6030043514efcd669b003d063ade7e508e34
-                  MATRIX: 958->1|1078->26|1106->28|1259->155|1273->161|1335->202|1422->263|1436->269|1496->308|1558->343|1587->363|1627->365|1668->378|1717->400|1751->418|1791->420|1840->441|1872->446|1909->462|1963->485|2004->498|2050->513|2082->518
-                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|41->9|41->9|41->9|44->12|44->12|44->12|45->13|46->14|46->14|46->14|47->15|47->15|47->15|48->16|49->17|50->18|51->19
+                  HASH: 05e5af55b4f16200b7d957a4faf4b1ac7d140045
+                  MATRIX: 958->1|1078->26|1105->28|1118->34|1167->63|1194->65|1207->71|1264->108|1292->111|1323->134|1362->136|1390->139|1418->159|1457->161|1492->170|1536->188|1569->206|1608->208|1652->225|1683->230|1719->246|1769->265|1805->274|1846->285|1878->287
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|35->3|35->3|37->5|37->5|37->5|38->6|38->6|38->6|39->7|40->8|40->8|40->8|41->9|41->9|41->9|42->10|43->11|44->12|45->13
                   -- GENERATED --
               */
           
