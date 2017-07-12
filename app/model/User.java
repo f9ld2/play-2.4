@@ -1,15 +1,15 @@
 package model;
 
 public class User {
-    private Long id;
+    private Integer id;
     private String name;
 
-    public User(Long id, String name) {
+    public User(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 

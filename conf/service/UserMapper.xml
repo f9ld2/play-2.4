@@ -3,18 +3,34 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="service.UserMapper">
-    <resultMap id="userMap" type="model.User">
+    <resultMap id="UserResult" type="model.User">
         <constructor>
-            <idArg column="id" javaType="Long"/>
+            <idArg column="id" javaType="Integer"/>
             <arg column="name" javaType="String"/>
         </constructor>
     </resultMap>
 
-    <select id="all" resultMap="userMap">
+    <select id="all" resultMap="UserResult">
         SELECT * FROM Users ORDER BY id
     </select>
 
-    <select id="getUserById" parameterType="Long" resultMap="userMap">
+    <select id="getUserById" parameterType="Integer" resultMap="UserResult">
         SELECT * FROM Users WHERE id = #{value}
     </select>
+    
+   	<insert id='insert' parameterType="model.User" useGeneratedKeys="true" keyProperty="id">
+	   INSERT INTO Users(name)
+	   VALUES(#{name})
+	</insert>
+	
+	<update id="update" parameterType="model.User">
+	    UPDATE Users 
+	    SET
+	     name= #{name}
+	    WHERE id = #{id}
+	</update>
+	
+	<delete id="delete" parameterType="Integer">
+	   DELETE FROM Users WHERE id = #{id}
+	</delete>
 </mapper>
