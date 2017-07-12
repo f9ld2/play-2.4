@@ -1,6 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/hoang-hd/Working/play-2.4/conf/application.conf,/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hoang-hd/Working/play-2.4/conf/logback.xml,/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hoang-hd/Working/play-2.4/conf/routes,/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hoang-hd/Working/play-2.4/conf/service,/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/service)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hoang-hd/Working/play-2.4/conf/service/UserMapper.xml,/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/service/UserMapper.xml)[0m
