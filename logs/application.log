@@ -1,0 +1,16 @@
+2017-07-12 11:50:22,237 [INFO] from application in scala-execution-context-global-82 - Creating Pool for datasource 'default'
+2017-07-12 11:50:22,253 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-82 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-12 11:50:22,430 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-82 - Database [default] connected at jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-12 11:50:22,742 [WARN] from application in scala-execution-context-global-82 - application.conf @ file:/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-12 11:50:22,906 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-82 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-12 11:50:23,027 [INFO] from play.api.Play in scala-execution-context-global-82 - Application started (Dev)
+2017-07-12 11:50:23,033 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - application.conf @ file:/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-12 11:50:23,258 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-4 - ==>  Preparing: SELECT * FROM Users ORDER BY id 
+2017-07-12 11:50:23,280 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-4 - ==> Parameters: 
+2017-07-12 11:50:23,302 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-4 - <==      Total: 2
+2017-07-12 11:50:23,333 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - application.conf @ file:/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
