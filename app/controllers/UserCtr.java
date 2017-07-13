@@ -9,6 +9,9 @@ import views.html.helper.form;
 import model.User;
 import java.util.List;
 import javax.inject.Inject;
+
+import com.google.gson.Gson;
+
 import service.UserMapper;
 import play.data.FormFactory;
 
