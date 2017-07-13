@@ -27,6 +27,45 @@ public class UserCtr extends Controller {
         return ok(list.render(users));
     }
     
+    public Result create(){
+    	Form<User> userForm = formFactory.form(User.class);
+    	
+    	if (request().method().equals("POST")) {
+    		userForm = userForm.bindFromRequest();
+    		
+    		if(!userForm.hasErrors()){
+    			userService.insert(userForm.get());
+    			
+    			return redirect(routes.UserCtr.list());
+    		}
+    	}
+    	
+    	return ok(create.render(userForm));
+    }
+    
+    public Result update(Integer id){
+    	User user = userService.getUserById(id);
+    	
+    	if(user == null){
+    		return notFound();
+    	}
+    	
+    	Form<User> userForm = formFactory.form(User.class).fill(user);
+    	
+    	if (request().method().equals("POST")) {
+    		userForm = userForm.bindFromRequest();
+    		
+    		if(!userForm.hasErrors()){
+    			userForm.get().setId(id);
+    			userService.update(userForm.get());
+    			
+    			return redirect(routes.UserCtr.list());
+    		}
+    	}
+    	 
+    	return ok(update.render(userForm));
+    }
+    
     public Result delete(Integer id) {
     	User user = userService.getUserById(id);
     	if(user == null){
@@ -35,25 +74,5 @@ public class UserCtr extends Controller {
     	
     	userService.delete(id);
     	return redirect(routes.UserCtr.list());
-    }
-    
-    public Result input(Integer id){
-    	Form<User> userForm = formFactory.form(User.class);
-    	if(id != null){
-    		User user = userService.getUserById(id);
-    		userForm = userForm.fill(user);
-    	}
-    	
-    	return ok(input.render(userForm));
-    }
-    
-    public Result save(){
-    	 Form<User> userForm = formFactory.form(User.class).bindFromRequest();
-    	 
-    	 if(userForm.hasErrors()){
-    		 return ok(input.render(userForm));
-    	 }
-    	 
-    	 return redirect(routes.UserCtr.list());
     }
 }
