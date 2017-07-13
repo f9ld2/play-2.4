@@ -1,8 +1,9 @@
-@(users: List[model.User])
+@(users: List[model.User], login: model.User)
 @assets.put("stylesheets/index.css")
 @assets.put("javascript/index.js", "footer")
 
 @main("Welcome to Play") {
+	@login.getName()<br/>
 	@if(!users.isEmpty()) {
         <ul>
             @for(user <- users) {

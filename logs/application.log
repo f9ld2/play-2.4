@@ -1,0 +1,25 @@
+2017-07-13 08:20:10,095 [INFO] from application in scala-execution-context-global-69 - Creating Pool for datasource 'default'
+2017-07-13 08:20:10,112 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-69 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-13 08:20:10,298 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-69 - Database [default] connected at jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-13 08:20:10,609 [WARN] from application in scala-execution-context-global-69 - application.conf @ file:/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-13 08:20:10,814 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-69 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-13 08:20:10,949 [INFO] from play.api.Play in scala-execution-context-global-69 - Application started (Dev)
+2017-07-13 08:20:11,136 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM Users ORDER BY id 
+2017-07-13 08:20:11,158 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-3 - ==> Parameters: 
+2017-07-13 08:20:11,176 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-3 - <==      Total: 3
+2017-07-13 08:20:11,178 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM Users WHERE id = ? 
+2017-07-13 08:20:11,179 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-3 - ==> Parameters: 1(Integer)
+2017-07-13 08:20:11,180 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-3 - <==      Total: 1
+2017-07-13 08:20:11,238 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - application.conf @ file:/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-13 08:20:33,742 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - application.conf @ file:/Users/hoang-hd/Working/play-2.4/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-13 08:20:33,749 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM Users ORDER BY id 
+2017-07-13 08:20:33,749 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-3 - ==> Parameters: 
+2017-07-13 08:20:33,750 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-3 - <==      Total: 3
+2017-07-13 08:20:33,751 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM Users WHERE id = ? 
+2017-07-13 08:20:33,752 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-3 - ==> Parameters: 1(Integer)
+2017-07-13 08:20:33,753 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-3 - <==      Total: 1

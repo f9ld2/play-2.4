@@ -17,6 +17,7 @@ public class MyBatisModule extends org.mybatis.guice.MyBatisModule {
         bindConstant().annotatedWith(
                 Names.named("mybatis.configuration.failFast")).
                 to(true);
+        
         bindDataSourceProviderType(PlayDataSourceProvider.class);
         bindTransactionFactoryType(JdbcTransactionFactory.class);
         addMapperClasses("service");
