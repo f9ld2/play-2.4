@@ -38,16 +38,17 @@ public class UserCtr extends Controller {
     	Form<User> userForm = formFactory.form(User.class);
     	if(id != null){
     		User user = userService.getUserById(id);
+    		userForm = userForm.fill(user);
     	}
     	
     	return ok(input.render(userForm));
     }
     
-    public Result save(Integer id){
+    public Result save(){
     	 Form<User> userForm = formFactory.form(User.class).bindFromRequest();
     	 
     	 if(userForm.hasErrors()){
-    		return badRequest(input.render(userForm));
+    		 return ok(input.render(userForm));
     	 }
     	 
     	 return redirect(routes.UserCtr.list());
