@@ -405,3 +405,77 @@ Caused by: java.lang.UnsupportedOperationException: Attempted to serialize java.
 2017-07-13 16:08:29,462 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-7 - ==>  Preparing: SELECT * FROM Users ORDER BY id 
 2017-07-13 16:08:29,489 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-7 - ==> Parameters: 
 2017-07-13 16:08:29,525 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-7 - <==      Total: 0
+2017-07-13 16:10:59,421 [INFO] from application in scala-execution-context-global-6728 - Shutting down connection pool.
+2017-07-13 16:10:59,488 [INFO] from application in scala-execution-context-global-6728 - Creating Pool for datasource 'default'
+2017-07-13 16:10:59,488 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-6728 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-13 16:10:59,844 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-6728 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-13 16:10:59,854 [WARN] from application in scala-execution-context-global-6728 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-13 16:10:59,877 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-6728 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-13 16:10:59,904 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-6728 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-13 16:10:59,904 [INFO] from play.api.Play in scala-execution-context-global-6728 - Application started (Dev)
+2017-07-13 16:10:59,905 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-13 16:10:59,936 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-18 - ==>  Preparing: SELECT * FROM Users ORDER BY id 
+2017-07-13 16:10:59,936 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-18 - ==> Parameters: 
+2017-07-13 16:10:59,957 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-18 - <==      Total: 0
+2017-07-13 16:10:59,987 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-13 16:12:24,772 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-29 - 
+
+! @74jcie62o - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[method toJson in class play.api.libs.json.Json cannot be applied to given types;
+  required: T,play.api.libs.json.Writes<T>
+  found: model.User
+  reason: cannot infer type-variable(s) T
+    (actual and formal argument lists differ in length)]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-13 16:13:17,344 [INFO] from application in scala-execution-context-global-8305 - Shutting down connection pool.
+2017-07-13 16:13:17,409 [INFO] from application in scala-execution-context-global-8305 - Creating Pool for datasource 'default'
+2017-07-13 16:13:17,409 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-8305 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-13 16:13:17,739 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-8305 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-13 16:13:17,748 [WARN] from application in scala-execution-context-global-8305 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-13 16:13:17,771 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-8305 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-13 16:13:17,793 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-8305 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-13 16:13:17,793 [INFO] from play.api.Play in scala-execution-context-global-8305 - Application started (Dev)
+2017-07-13 16:13:17,794 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-24 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-13 16:13:17,822 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-24 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
