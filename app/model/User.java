@@ -1,7 +1,11 @@
 package model;
 
+import play.data.validation.Constraints;
+
 public class User {
     private Integer id;
+    
+    @Constraints.Required
     private String name;
 
     public User() {}
