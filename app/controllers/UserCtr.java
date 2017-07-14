@@ -22,7 +22,7 @@ public class UserCtr extends Controller {
 	@Inject
 	private FormFactory formFactory;
 	
-    public Result list() {
+    public Result list(int id) {
     	List<User> users = userService.all();
         return ok(list.render(users));
     }
@@ -38,14 +38,14 @@ public class UserCtr extends Controller {
     			userService.insert(user);
     			
     			flash("success", "User " + user.getFullname() + " has been created");
-    			return redirect(routes.UserCtr.list());
+    			return redirect(routes.UserCtr.list(1));
     		}
     	}
     	
     	return ok(create.render(userForm));
     }
     
-    public Result update(Integer id){
+    public Result update(int id){
     	User user = userService.getUserById(id);
     	
     	if(user == null){
@@ -63,20 +63,20 @@ public class UserCtr extends Controller {
     			userService.update(id, userForm.get());
     			flash("success", "User " + userForm.get().getFullname() + " has been updated");
     			
-    			return redirect(routes.UserCtr.list());
+    			return redirect(routes.UserCtr.list(1));
     		}
     	}
     	 
     	return ok(update.render(id, userForm));
     }
     
-    public Result delete(Integer id) {
+    public Result delete(int id) {
     	User user = userService.getUserById(id);
     	if(user == null){
     		return notFound(String.format("User %s does not exist.", id));
     	}
     	
     	userService.delete(id);
-    	return redirect(routes.UserCtr.list());
+    	return redirect(routes.UserCtr.list(1));
     }
 }
