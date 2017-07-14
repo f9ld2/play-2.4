@@ -3,6 +3,20 @@
 @assets.put("javascript/index.js", "footer")
 
 @main("List User") {
+	@if(flash.containsKey("success")){
+	<div class="alert alert-success alert-dismissable">
+	    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	    <strong> @flash.get("success")</strong>
+	</div>
+	}
+	
+	@if(flash.containsKey("error")){
+	<div class="alert alert-danger alert-dismissable">
+	    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	    <strong>@@flash.get("error")</strong>
+	</div>
+	}
+
 	<a href="@routes.UserCtr.create()">create</a><br/>
 	@if(!users.isEmpty()) {
         <ul>

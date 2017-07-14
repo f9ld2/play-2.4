@@ -8,6 +8,10 @@
 - Static Page
 	- 404
 	- 500
+- File upload
+	
+- Timezone
+	-Duser.timezone=
 
 http://svn.apache.org/repos/asf/ibatis/java/ibatis-3/trunk/doc/en/iBATIS-3-User-Guide.pdf
 https://bhaa.ie/documents/2014/poc/play_for_java_v2_meap.pdf
