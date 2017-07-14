@@ -3,6 +3,7 @@ package model;
 import java.util.Date;
 
 import play.data.validation.Constraints;
+import play.data.format.Formats;
 
 public class User {
     private Integer id;
@@ -10,10 +11,12 @@ public class User {
     @Constraints.Required
     private String fullname;
     
+    @Formats.DateTime(pattern = "yyyy-MM-dd")
     private Date birthday;
     
     private String phone;
     
+    @Constraints.Email
     private String email;
     
     private Date dateAdded;

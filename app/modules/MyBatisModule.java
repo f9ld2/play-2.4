@@ -20,6 +20,7 @@ public class MyBatisModule extends org.mybatis.guice.MyBatisModule {
         
         bindDataSourceProviderType(PlayDataSourceProvider.class);
         bindTransactionFactoryType(JdbcTransactionFactory.class);
+        mapUnderscoreToCamelCase(true);
         addMapperClasses("service");
     }
 

@@ -7,7 +7,7 @@
 	@if(!users.isEmpty()) {
         <ul>
             @for(user <- users) {
-                <li>@user.getId() - @user.getFullname() - @user.getEmail() - @user.getPhone() - @user.getBirthday() <a href="@routes.UserCtr.update(user.getId())">edit</a> | <a href="@routes.UserCtr.delete(user.getId())">delete</a></li>
+                <li>@user.getId() - @user.getFullname() - @user.getEmail() - @user.getPhone() - @user.getBirthday().format("yyyy/MM/dd") - @user.getDateAdded().format("yyyy/MM/dd") <a href="@routes.UserCtr.update(user.getId())">edit</a> | <a href="@routes.UserCtr.delete(user.getId())">delete</a></li>
             }
         </ul>
     }
