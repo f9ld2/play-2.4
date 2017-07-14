@@ -21,7 +21,7 @@ public class UserCtr extends Controller {
 	
 	@Inject
 	private FormFactory formFactory;
-
+	
     public Result list() {
     	List<User> users = userService.all();
         return ok(list.render(users));
@@ -34,8 +34,10 @@ public class UserCtr extends Controller {
     		userForm = userForm.bindFromRequest();
     		
     		if(!userForm.hasErrors()){
-    			userService.insert(userForm.get());
+    			User user = userForm.get();
+    			userService.insert(user);
     			
+    			flash("success", "User " + user.getName() + " has been created");
     			return redirect(routes.UserCtr.list());
     		}
     	}
@@ -47,7 +49,7 @@ public class UserCtr extends Controller {
     	User user = userService.getUserById(id);
     	
     	if(user == null){
-    		return notFound();
+    		return notFound(String.format("User %s does not exist.", id));
     	}
     	
     	Form<User> userForm = formFactory.form(User.class).fill(user);
@@ -56,9 +58,12 @@ public class UserCtr extends Controller {
     		userForm = userForm.bindFromRequest();
     		
     		if(!userForm.hasErrors()){
-    			userForm.get().setId(id);
-    			userService.update(userForm.get());
+    			user = userForm.get();
+    			user.setId(id);
     			
+    			userService.update(user);
+    			
+    			flash("success", "User " + user.getName() + " has been updated");
     			return redirect(routes.UserCtr.list());
     		}
     	}
@@ -69,7 +74,7 @@ public class UserCtr extends Controller {
     public Result delete(Integer id) {
     	User user = userService.getUserById(id);
     	if(user == null){
-    		return notFound();
+    		return notFound(String.format("User %s does not exist.", id));
     	}
     	
     	userService.delete(id);

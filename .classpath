@@ -336,6 +336,11 @@
       <attribute name="javadoc_location" value="jar:file:/Users/hoang-hd/.ivy2/cache/com.google.inject.extensions/guice-multibindings/docs/guice-multibindings-4.1.0-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
+  <classpathentry sourcepath="/Users/hoang-hd/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.8.1-sources.jar" kind="lib" path="/Users/hoang-hd/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.8.1.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/Users/hoang-hd/.ivy2/cache/com.google.code.gson/gson/docs/gson-2.8.1-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
   <classpathentry sourcepath="/Users/hoang-hd/.ivy2/cache/com.typesafe.play/play-test_2.12/srcs/play-test_2.12-2.6.1-sources.jar" kind="lib" path="/Users/hoang-hd/.ivy2/cache/com.typesafe.play/play-test_2.12/jars/play-test_2.12-2.6.1.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/Users/hoang-hd/.ivy2/cache/com.typesafe.play/play-test_2.12/docs/play-test_2.12-2.6.1-javadoc.jar!/"/>
@@ -373,7 +378,6 @@
   <classpathentry kind="lib" path="/Users/hoang-hd/.ivy2/cache/cglib/cglib-nodep/jars/cglib-nodep-3.2.4.jar"/>
   <classpathentry kind="lib" path="/Users/hoang-hd/.ivy2/cache/org.apache.commons/commons-exec/jars/commons-exec-1.3.jar"/>
   <classpathentry kind="lib" path="/Users/hoang-hd/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar"/>
-  <classpathentry kind="lib" path="/Users/hoang-hd/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.8.0.jar"/>
   <classpathentry kind="lib" path="/Users/hoang-hd/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.3.jar"/>
   <classpathentry kind="lib" path="/Users/hoang-hd/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.6.jar"/>
   <classpathentry kind="lib" path="/Users/hoang-hd/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.1.0.jar"/>
