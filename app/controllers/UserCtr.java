@@ -60,12 +60,9 @@ public class UserCtr extends Controller {
     		userForm = userForm.bindFromRequest();
     		
     		if(!userForm.hasErrors()){
-    			user = userForm.get();
-    			user.setId(id);
+    			userService.update(id, userForm.get());
+    			flash("success", "User " + userForm.get().getFullname() + " has been updated");
     			
-    			userService.update(user);
-    			
-    			flash("success", "User " + user.getFullname() + " has been updated");
     			return redirect(routes.UserCtr.list());
     		}
     	}

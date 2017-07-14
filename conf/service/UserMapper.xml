@@ -16,13 +16,13 @@
 	   VALUES(#{fullname}, #{birthday}, #{phone}, #{email}, NOW())
 	</insert>
 	
-	<update id="update" parameterType="model.User">
+	<update id="update" parameterType="map">
 	    UPDATE users 
 	    SET
-	     	fullname		= #{fullname},
-	     	birthday		= #{birthday},
-	     	phone			= #{phone},
-	     	email			= #{email},
+	     	fullname		= #{user.fullname},
+	     	birthday		= #{user.birthday},
+	     	phone			= #{user.phone},
+	     	email			= #{user.email},
 	     	date_modified	= NOW()
 	    WHERE id = #{id}
 	</update>

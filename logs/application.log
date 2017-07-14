@@ -2941,3 +2941,86 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
 2017-07-14 11:37:25,164 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-196 - ==>  Preparing: SELECT * FROM users ORDER BY id 
 2017-07-14 11:37:25,164 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-196 - ==> Parameters: 
 2017-07-14 11:37:25,186 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-196 - <==      Total: 2
+2017-07-14 11:44:28,958 [INFO] from application in scala-execution-context-global-114318 - Shutting down connection pool.
+2017-07-14 11:44:29,013 [INFO] from application in scala-execution-context-global-114318 - Creating Pool for datasource 'default'
+2017-07-14 11:44:29,013 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-114318 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 11:44:29,342 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-114318 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 11:44:29,350 [WARN] from application in scala-execution-context-global-114318 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:44:29,370 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-114318 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 11:44:29,391 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-114318 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 11:44:29,391 [INFO] from play.api.Play in scala-execution-context-global-114318 - Application started (Dev)
+2017-07-14 11:44:29,392 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-205 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:44:29,421 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-205 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:44:29,422 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-205 - ==> Parameters: 1(Integer)
+2017-07-14 11:44:29,443 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-205 - <==      Total: 1
+2017-07-14 11:44:29,479 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-205 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:44:40,645 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-209 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:44:40,699 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:44:40,699 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - ==> Parameters: 1(Integer)
+2017-07-14 11:44:40,721 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - <==      Total: 1
+2017-07-14 11:44:40,768 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-2 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:44:40,771 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-2 - ==> Parameters: Nguyen Van A(String), 2017-09-28 00:00:00.0(Timestamp), 098xxxxx(String), nguyenq@gmail.com(String), 1(Integer)
+2017-07-14 11:44:40,813 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-2 - <==    Updates: 1
+2017-07-14 11:44:40,901 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-209 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:44:40,901 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-209 - ==> Parameters: 
+2017-07-14 11:44:40,923 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-209 - <==      Total: 2
+2017-07-14 11:44:53,757 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-213 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:44:53,757 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-213 - ==> Parameters: 1(Integer)
+2017-07-14 11:44:53,779 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-213 - <==      Total: 1
+2017-07-14 11:45:04,949 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:45:04,949 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==> Parameters: 1(Integer)
+2017-07-14 11:45:04,971 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - <==      Total: 1
+2017-07-14 11:45:05,015 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:45:05,015 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - ==> Parameters: Nguyen Van A1(String), 2017-01-27 00:00:00.0(Timestamp), 098xxxxx1(String), nguyenq@gmail.com1(String), 1(Integer)
+2017-07-14 11:45:05,057 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - <==    Updates: 1
+2017-07-14 11:45:05,131 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-205 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:45:05,131 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-205 - ==> Parameters: 
+2017-07-14 11:45:05,153 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-205 - <==      Total: 2
+2017-07-14 11:45:10,348 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-215 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:45:10,349 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-215 - ==> Parameters: 1(Integer)
+2017-07-14 11:45:10,371 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-215 - <==      Total: 1
+2017-07-14 11:45:32,417 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-209 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:45:32,465 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-5 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:45:32,466 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-5 - ==> Parameters: 1(Integer)
+2017-07-14 11:45:32,487 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-5 - <==      Total: 1
+2017-07-14 11:45:32,530 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-5 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:45:32,531 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-5 - ==> Parameters: Nguyen Van A1(String), 2017-01-26 00:00:00.0(Timestamp), 098xxxxx1(String), nguyenq@gmail.com1(String), 1(Integer)
+2017-07-14 11:45:32,573 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-5 - <==    Updates: 1
+2017-07-14 11:45:32,657 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-209 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:45:32,657 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-209 - ==> Parameters: 
+2017-07-14 11:45:32,679 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-209 - <==      Total: 2
+2017-07-14 11:46:27,643 [INFO] from application in scala-execution-context-global-115580 - Shutting down connection pool.
+2017-07-14 11:46:27,693 [INFO] from application in scala-execution-context-global-115580 - Creating Pool for datasource 'default'
+2017-07-14 11:46:27,693 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-115580 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 11:46:28,019 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-115580 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 11:46:28,027 [WARN] from application in scala-execution-context-global-115580 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:46:28,048 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-115580 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 11:46:28,067 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-115580 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 11:46:28,067 [INFO] from play.api.Play in scala-execution-context-global-115580 - Application started (Dev)
+2017-07-14 11:46:28,068 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-209 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:46:28,097 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-209 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:46:28,097 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-209 - ==> Parameters: 1(Integer)
+2017-07-14 11:46:28,119 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-209 - <==      Total: 1
+2017-07-14 11:46:28,155 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-209 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:46:33,326 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:46:33,327 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==> Parameters: 1(Integer)
+2017-07-14 11:46:33,348 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - <==      Total: 1
+2017-07-14 11:46:33,394 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:46:33,394 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - ==> Parameters: Nguyen Van A(String), 2017-01-25 00:00:00.0(Timestamp), 098xxxxx(String), nguyenq@gmail.com(String), 1(Integer)
+2017-07-14 11:46:33,436 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - <==    Updates: 1
+2017-07-14 11:46:33,511 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-216 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:46:33,511 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-216 - ==> Parameters: 
+2017-07-14 11:46:33,532 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-216 - <==      Total: 2
+2017-07-14 11:46:39,109 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-209 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:46:39,109 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-209 - ==> Parameters: 1(Integer)
+2017-07-14 11:46:39,131 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-209 - <==      Total: 1
