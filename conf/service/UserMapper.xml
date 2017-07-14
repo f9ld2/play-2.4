@@ -4,26 +4,30 @@
 
 <mapper namespace="service.UserMapper">
     <select id="all" resultType="model.User">
-        SELECT * FROM Users ORDER BY id
+        SELECT * FROM users ORDER BY id
     </select>
 
     <select id="getUserById" parameterType="Integer" resultType="model.User">
-        SELECT * FROM Users WHERE id = #{value}
+        SELECT * FROM users WHERE id = #{id}
     </select>
     
    	<insert id="insert" parameterType="model.User" useGeneratedKeys="true" keyProperty="id">
-	   INSERT INTO Users(name)
-	   VALUES(#{name})
+	   INSERT INTO users(fullname, birthday, phone, email, date_added)
+	   VALUES(#{fullname}, #{birthday}, #{phone}, #{email}, NOW())
 	</insert>
 	
 	<update id="update" parameterType="model.User">
-	    UPDATE Users 
+	    UPDATE users 
 	    SET
-	     name= #{name}
+	     	fullname		= #{fullname},
+	     	birthday		= #{birthday},
+	     	phone			= #{phone},
+	     	email			= #{email},
+	     	date_modified	= NOW()
 	    WHERE id = #{id}
 	</update>
 	
 	<delete id="delete" parameterType="Integer">
-	   DELETE FROM Users WHERE id = #{id}
+	   DELETE FROM users WHERE id = #{id}
 	</delete>
 </mapper>

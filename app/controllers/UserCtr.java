@@ -37,7 +37,7 @@ public class UserCtr extends Controller {
     			User user = userForm.get();
     			userService.insert(user);
     			
-    			flash("success", "User " + user.getName() + " has been created");
+    			flash("success", "User " + user.getFullname() + " has been created");
     			return redirect(routes.UserCtr.list());
     		}
     	}
@@ -52,7 +52,9 @@ public class UserCtr extends Controller {
     		return notFound(String.format("User %s does not exist.", id));
     	}
     	
-    	Form<User> userForm = formFactory.form(User.class).fill(user);
+    	Form<User> userForm = formFactory
+    							.form(User.class)
+    							.fill(user);
     	
     	if (request().method().equals("POST")) {
     		userForm = userForm.bindFromRequest();
@@ -63,12 +65,12 @@ public class UserCtr extends Controller {
     			
     			userService.update(user);
     			
-    			flash("success", "User " + user.getName() + " has been updated");
+    			flash("success", "User " + user.getFullname() + " has been updated");
     			return redirect(routes.UserCtr.list());
     		}
     	}
     	 
-    	return ok(update.render(userForm));
+    	return ok(update.render(id, userForm));
     }
     
     public Result delete(Integer id) {

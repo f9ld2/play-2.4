@@ -1,13 +1,11 @@
-@(userForm: Form[model.User])
+@(id: Int, userForm: Form[model.User])
 @assets.put("stylesheets/index.css")
 @assets.put("javascript/index.js", "footer")
 
 @import helper._
 
 @main("Form User") {
-	@form(action = routes.UserCtr.update(userForm.get().getId())) {
-		@CSRF.formField
-      	@inputText(userForm("name"))
-		<button id="submit" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+	@form(action = routes.UserCtr.update(id)) {
+		@inputForm(userForm)
 	}
 }

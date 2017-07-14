@@ -3,10 +3,11 @@
 @assets.put("javascript/index.js", "footer")
 
 @main("List User") {
+	<a href="@routes.UserCtr.create()">create</a><br/>
 	@if(!users.isEmpty()) {
         <ul>
             @for(user <- users) {
-                <li>@user.getId() - @user.getName()</li>
+                <li>@user.getId() - @user.getFullname() - @user.getEmail() - @user.getPhone() - @user.getBirthday() <a href="@routes.UserCtr.update(user.getId())">edit</a> | <a href="@routes.UserCtr.delete(user.getId())">delete</a></li>
             }
         </ul>
     }

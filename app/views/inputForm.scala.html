@@ -1,0 +1,9 @@
+@(userForm: Form[model.User])
+@import helper._
+
+@CSRF.formField
+@inputText(userForm("fullname"))
+@inputDate(userForm("birthday"))
+@inputText(userForm("phone"))
+@inputText(userForm("email"))
+<button id="submit" type="submit" value="Submit" class="btn btn-primary">Submit</button>

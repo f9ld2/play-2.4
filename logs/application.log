@@ -966,3 +966,1453 @@ Caused by: java.lang.IllegalStateException: Error(s) binding form: {"name":["Thi
 2017-07-14 10:21:14,616 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-56 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
 2017-07-14 10:21:14,640 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-56 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
 2017-07-14 10:21:18,666 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-64 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:43:24,950 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-65 - 
+
+! @74ji8anme - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value getName is not a member of model.User]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:43:28,285 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-65 - 
+
+! @74ji8b2kl - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value getName is not a member of model.User]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:43:45,533 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-65 - 
+
+! @74ji8c285 - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   method getName()
+  location: variable user of type model.User]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:44:05,174 [INFO] from application in scala-execution-context-global-75945 - Shutting down connection pool.
+2017-07-14 10:44:05,246 [INFO] from application in scala-execution-context-global-75945 - Creating Pool for datasource 'default'
+2017-07-14 10:44:05,247 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-75945 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:44:05,578 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-75945 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:44:05,591 [WARN] from application in scala-execution-context-global-75945 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:44:05,625 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-75945 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:44:05,649 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-75945 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:44:05,650 [INFO] from play.api.Play in scala-execution-context-global-75945 - Application started (Dev)
+2017-07-14 10:44:05,651 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-68 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:44:05,682 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-68 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:44:05,682 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-68 - ==> Parameters: 
+2017-07-14 10:44:05,746 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-68 - <==      Total: 1
+2017-07-14 10:44:05,775 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-68 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:44:41,353 [INFO] from application in scala-execution-context-global-76352 - Shutting down connection pool.
+2017-07-14 10:44:41,416 [INFO] from application in scala-execution-context-global-76352 - Creating Pool for datasource 'default'
+2017-07-14 10:44:41,416 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-76352 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:44:41,749 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-76352 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:44:41,757 [WARN] from application in scala-execution-context-global-76352 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:44:41,779 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-76352 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:44:41,802 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-76352 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:44:41,802 [INFO] from play.api.Play in scala-execution-context-global-76352 - Application started (Dev)
+2017-07-14 10:44:41,803 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-68 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:44:41,834 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-68 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:44:41,834 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-68 - ==> Parameters: 
+2017-07-14 10:44:41,857 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-68 - <==      Total: 1
+2017-07-14 10:44:41,886 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-68 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:45:23,758 [INFO] from application in scala-execution-context-global-76813 - Shutting down connection pool.
+2017-07-14 10:45:23,819 [INFO] from application in scala-execution-context-global-76813 - Creating Pool for datasource 'default'
+2017-07-14 10:45:23,819 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-76813 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:45:24,149 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-76813 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:45:24,159 [WARN] from application in scala-execution-context-global-76813 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:45:24,184 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-76813 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:45:24,206 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-76813 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:45:24,207 [INFO] from play.api.Play in scala-execution-context-global-76813 - Application started (Dev)
+2017-07-14 10:45:24,208 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-73 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:45:24,241 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-73 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:45:24,242 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-73 - ==> Parameters: 
+2017-07-14 10:45:24,264 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-73 - <==      Total: 1
+2017-07-14 10:45:24,296 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-73 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:45:27,468 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-77 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:45:27,468 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-77 - ==> Parameters: 1(Integer)
+2017-07-14 10:45:27,490 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-77 - <==      Total: 1
+2017-07-14 10:46:01,063 [INFO] from application in scala-execution-context-global-77234 - Shutting down connection pool.
+2017-07-14 10:46:01,118 [INFO] from application in scala-execution-context-global-77234 - Creating Pool for datasource 'default'
+2017-07-14 10:46:01,119 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-77234 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:46:01,446 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-77234 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:46:01,454 [WARN] from application in scala-execution-context-global-77234 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:46:01,476 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-77234 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:46:01,498 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-77234 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:46:01,498 [INFO] from play.api.Play in scala-execution-context-global-77234 - Application started (Dev)
+2017-07-14 10:46:01,499 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-75 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:46:01,529 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-75 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:46:01,529 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-75 - ==> Parameters: 
+2017-07-14 10:46:01,551 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-75 - <==      Total: 1
+2017-07-14 10:46:01,582 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-75 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:46:02,361 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-66 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:46:02,361 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-66 - ==> Parameters: 
+2017-07-14 10:46:02,383 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-66 - <==      Total: 1
+2017-07-14 10:46:25,155 [INFO] from application in scala-execution-context-global-77512 - Shutting down connection pool.
+2017-07-14 10:46:25,223 [INFO] from application in scala-execution-context-global-77512 - Creating Pool for datasource 'default'
+2017-07-14 10:46:25,223 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-77512 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:46:25,553 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-77512 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:46:25,561 [WARN] from application in scala-execution-context-global-77512 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:46:25,582 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-77512 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:46:25,604 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-77512 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:46:25,604 [INFO] from play.api.Play in scala-execution-context-global-77512 - Application started (Dev)
+2017-07-14 10:46:25,605 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-71 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:46:25,635 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-71 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:46:25,635 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-71 - ==> Parameters: 
+2017-07-14 10:46:25,657 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-71 - <==      Total: 1
+2017-07-14 10:46:25,687 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-71 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:46:32,191 [INFO] from application in scala-execution-context-global-77527 - Shutting down connection pool.
+2017-07-14 10:46:32,246 [INFO] from application in scala-execution-context-global-77527 - Creating Pool for datasource 'default'
+2017-07-14 10:46:32,246 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-77527 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:46:32,576 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-77527 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:46:32,585 [WARN] from application in scala-execution-context-global-77527 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:46:32,606 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-77527 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:46:32,627 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-77527 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:46:32,627 [INFO] from play.api.Play in scala-execution-context-global-77527 - Application started (Dev)
+2017-07-14 10:46:32,628 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-69 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:46:32,658 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-69 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:46:32,658 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-69 - ==> Parameters: 
+2017-07-14 10:46:32,679 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-69 - <==      Total: 1
+2017-07-14 10:46:32,708 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-69 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:47:16,044 [INFO] from application in scala-execution-context-global-78093 - Shutting down connection pool.
+2017-07-14 10:47:16,102 [INFO] from application in scala-execution-context-global-78093 - Creating Pool for datasource 'default'
+2017-07-14 10:47:16,102 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-78093 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:47:16,435 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-78093 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:47:16,443 [WARN] from application in scala-execution-context-global-78093 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:47:16,466 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-78093 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:47:16,493 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-78093 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:47:16,494 [INFO] from play.api.Play in scala-execution-context-global-78093 - Application started (Dev)
+2017-07-14 10:47:16,494 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-74 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:47:16,524 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:47:16,524 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - ==> Parameters: 
+2017-07-14 10:47:16,547 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - <==      Total: 1
+2017-07-14 10:47:16,576 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-74 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:47:20,698 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-69 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:47:20,698 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-69 - ==> Parameters: 1(Integer)
+2017-07-14 10:47:20,721 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-69 - <==      Total: 1
+2017-07-14 10:47:29,402 [INFO] from application in scala-execution-context-global-78108 - Shutting down connection pool.
+2017-07-14 10:47:29,459 [INFO] from application in scala-execution-context-global-78108 - Creating Pool for datasource 'default'
+2017-07-14 10:47:29,459 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-78108 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:47:29,789 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-78108 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:47:29,797 [WARN] from application in scala-execution-context-global-78108 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:47:29,818 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-78108 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:47:29,840 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-78108 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:47:29,840 [INFO] from play.api.Play in scala-execution-context-global-78108 - Application started (Dev)
+2017-07-14 10:47:29,841 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-66 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:47:29,872 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-66 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:47:29,872 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-66 - ==> Parameters: 1(Integer)
+2017-07-14 10:47:29,894 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-66 - <==      Total: 1
+2017-07-14 10:47:29,929 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-66 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:47:40,077 [DEBUG] from service.UserMapper.insert in application-akka.actor.default-dispatcher-5 - ==>  Preparing: INSERT INTO users(fullname, birthday, phone, email, date_added) VALUES(?, ?, ?, ?, NOW()) 
+2017-07-14 10:47:40,078 [DEBUG] from service.UserMapper.insert in application-akka.actor.default-dispatcher-5 - ==> Parameters: Test(String), null, null, null
+2017-07-14 10:47:40,120 [DEBUG] from service.UserMapper.insert in application-akka.actor.default-dispatcher-5 - <==    Updates: 1
+2017-07-14 10:47:40,487 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:47:40,487 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - ==> Parameters: 
+2017-07-14 10:47:40,510 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - <==      Total: 2
+2017-07-14 10:47:43,290 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-79 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:47:43,290 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-79 - ==> Parameters: 2(Integer)
+2017-07-14 10:47:43,312 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-79 - <==      Total: 1
+2017-07-14 10:48:00,599 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:48:00,599 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==> Parameters: 2(Integer)
+2017-07-14 10:48:00,621 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - <==      Total: 1
+2017-07-14 10:48:00,665 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-3 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 10:48:00,666 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-3 - ==> Parameters: Test2222(String), null, null, null, 2(Integer)
+2017-07-14 10:48:00,709 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-3 - <==    Updates: 1
+2017-07-14 10:48:00,810 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:48:00,810 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - ==> Parameters: 
+2017-07-14 10:48:00,833 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - <==      Total: 2
+2017-07-14 10:48:13,138 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-66 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:48:13,187 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-66 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:48:13,187 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-66 - ==> Parameters: 2(Integer)
+2017-07-14 10:48:13,210 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-66 - <==      Total: 1
+2017-07-14 10:48:13,253 [DEBUG] from service.UserMapper.delete in play-dev-mode-akka.actor.default-dispatcher-66 - ==>  Preparing: DELETE FROM users WHERE id = ? 
+2017-07-14 10:48:13,253 [DEBUG] from service.UserMapper.delete in play-dev-mode-akka.actor.default-dispatcher-66 - ==> Parameters: 2(Integer)
+2017-07-14 10:48:13,296 [DEBUG] from service.UserMapper.delete in play-dev-mode-akka.actor.default-dispatcher-66 - <==    Updates: 1
+2017-07-14 10:48:13,398 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 10:48:13,398 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - ==> Parameters: 
+2017-07-14 10:48:13,421 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-74 - <==      Total: 1
+2017-07-14 10:49:38,329 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-69 - 
+
+! @74ji96458 - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value CSRF]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:09,921 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-86 - 
+
+! @74ji97ooa - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value inputText]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:11,083 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-66 - 
+
+! @74ji980h1 - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value inputText]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:11,730 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-81 - 
+
+! @74ji981fo - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value inputText]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:11,857 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-78 - 
+
+! @74ji981km - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value inputText]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:46,316 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-71 - 
+
+! @74ji9a0k4 - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value form]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:47,521 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-81 - 
+
+! @74ji9a2ee - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value form]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:48,109 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-54 - 
+
+! @74ji9a3b3 - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value form]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:48,248 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-86 - 
+
+! @74ji9a3gc - Internal server error, for (GET) [/create] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value form]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-14 10:50:58,750 [INFO] from application in scala-execution-context-global-80722 - Shutting down connection pool.
+2017-07-14 10:50:58,808 [INFO] from application in scala-execution-context-global-80722 - Creating Pool for datasource 'default'
+2017-07-14 10:50:58,809 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-80722 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:50:59,141 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-80722 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:50:59,151 [WARN] from application in scala-execution-context-global-80722 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:50:59,179 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-80722 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:50:59,203 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-80722 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:50:59,203 [INFO] from play.api.Play in scala-execution-context-global-80722 - Application started (Dev)
+2017-07-14 10:50:59,204 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-91 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:50:59,231 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-91 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:52:35,197 [INFO] from application in scala-execution-context-global-81731 - Shutting down connection pool.
+2017-07-14 10:52:35,251 [INFO] from application in scala-execution-context-global-81731 - Creating Pool for datasource 'default'
+2017-07-14 10:52:35,251 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-81731 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:52:35,584 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-81731 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:52:35,593 [WARN] from application in scala-execution-context-global-81731 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:52:35,615 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-81731 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:52:35,637 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-81731 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:52:35,637 [INFO] from play.api.Play in scala-execution-context-global-81731 - Application started (Dev)
+2017-07-14 10:52:35,638 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-90 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:52:35,661 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-90 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:52:43,451 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-97 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:52:43,451 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-97 - ==> Parameters: 1(Integer)
+2017-07-14 10:52:43,473 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-97 - <==      Total: 1
+2017-07-14 10:52:56,777 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:52:56,777 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==> Parameters: 1(Integer)
+2017-07-14 10:52:56,799 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - <==      Total: 1
+2017-07-14 10:52:56,874 [ERROR] from application in application-akka.actor.default-dispatcher-3 - 
+
+! @74ji9hbnh - Internal server error, for (POST) [/update/1] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[IllegalStateException: Error(s) binding form: {"birthday":["Invalid value"]}]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:252)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:337)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:322)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:39)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:38)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.IllegalStateException: Error(s) binding form: {"birthday":["Invalid value"]}
+	at play.data.Form.get(Form.java:761)
+	at views.html.update$.apply(update.template.scala:40)
+	at views.html.update$.render(update.template.scala:49)
+	at views.html.update.render(update.template.scala)
+	at controllers.UserCtr.update(UserCtr.java:73)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$8(Routes.scala:207)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:136)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:135)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:110)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:78)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.core.j.JavaAction.$anonfun$apply$2(JavaAction.scala:113)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete(Promise.scala:368)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete$(Promise.scala:367)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.onComplete(Promise.scala:375)
+	at scala.concurrent.impl.Promise.transform(Promise.scala:29)
+	at scala.concurrent.impl.Promise.transform$(Promise.scala:27)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.transform(Promise.scala:375)
+	at scala.concurrent.Future.map(Future.scala:287)
+	at scala.concurrent.Future.map$(Future.scala:287)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.map(Promise.scala:375)
+	at scala.concurrent.Future$.apply(Future.scala:653)
+	at play.core.j.JavaAction.apply(JavaAction.scala:113)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:96)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	... 12 common frames omitted
+2017-07-14 10:53:31,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-91 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:53:31,253 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-91 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:53:31,254 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-91 - ==> Parameters: 1(Integer)
+2017-07-14 10:53:31,276 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-91 - <==      Total: 1
+2017-07-14 10:53:34,425 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:53:34,425 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - ==> Parameters: 1(Integer)
+2017-07-14 10:53:34,447 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - <==      Total: 1
+2017-07-14 10:53:34,472 [ERROR] from application in application-akka.actor.default-dispatcher-6 - 
+
+! @74ji9jfdj - Internal server error, for (POST) [/update/1] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[IllegalStateException: Error(s) binding form: {"birthday":["Invalid value"]}]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:252)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:337)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:322)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:39)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:38)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.IllegalStateException: Error(s) binding form: {"birthday":["Invalid value"]}
+	at play.data.Form.get(Form.java:761)
+	at views.html.update$.apply(update.template.scala:40)
+	at views.html.update$.render(update.template.scala:49)
+	at views.html.update.render(update.template.scala)
+	at controllers.UserCtr.update(UserCtr.java:73)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$8(Routes.scala:207)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:136)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:135)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:110)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:78)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.core.j.JavaAction.$anonfun$apply$2(JavaAction.scala:113)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete(Promise.scala:368)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete$(Promise.scala:367)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.onComplete(Promise.scala:375)
+	at scala.concurrent.impl.Promise.transform(Promise.scala:29)
+	at scala.concurrent.impl.Promise.transform$(Promise.scala:27)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.transform(Promise.scala:375)
+	at scala.concurrent.Future.map(Future.scala:287)
+	at scala.concurrent.Future.map$(Future.scala:287)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.map(Promise.scala:375)
+	at scala.concurrent.Future$.apply(Future.scala:653)
+	at play.core.j.JavaAction.apply(JavaAction.scala:113)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:96)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	... 12 common frames omitted
+2017-07-14 10:58:15,733 [INFO] from application in scala-execution-context-global-85248 - Shutting down connection pool.
+2017-07-14 10:58:15,780 [INFO] from application in scala-execution-context-global-85248 - Creating Pool for datasource 'default'
+2017-07-14 10:58:15,781 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-85248 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 10:58:16,107 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-85248 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 10:58:16,115 [WARN] from application in scala-execution-context-global-85248 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:58:16,139 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-85248 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 10:58:16,159 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-85248 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 10:58:16,159 [INFO] from play.api.Play in scala-execution-context-global-85248 - Application started (Dev)
+2017-07-14 10:58:16,160 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-104 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 10:58:16,193 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 10:58:16,193 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==> Parameters: 1(Integer)
+2017-07-14 10:58:16,215 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - <==      Total: 1
+2017-07-14 10:58:16,247 [ERROR] from application in application-akka.actor.default-dispatcher-3 - 
+
+! @74jia9g96 - Internal server error, for (POST) [/update/1] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[IllegalStateException: Error(s) binding form: {"birthday":["Invalid value"]}]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:252)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:337)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:322)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:39)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:38)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.IllegalStateException: Error(s) binding form: {"birthday":["Invalid value"]}
+	at play.data.Form.get(Form.java:761)
+	at views.html.update$.apply(update.template.scala:40)
+	at views.html.update$.render(update.template.scala:49)
+	at views.html.update.render(update.template.scala)
+	at controllers.UserCtr.update(UserCtr.java:73)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$8(Routes.scala:207)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:136)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:135)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:110)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:78)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.core.j.JavaAction.$anonfun$apply$2(JavaAction.scala:113)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete(Promise.scala:368)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete$(Promise.scala:367)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.onComplete(Promise.scala:375)
+	at scala.concurrent.impl.Promise.transform(Promise.scala:29)
+	at scala.concurrent.impl.Promise.transform$(Promise.scala:27)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.transform(Promise.scala:375)
+	at scala.concurrent.Future.map(Future.scala:287)
+	at scala.concurrent.Future.map$(Future.scala:287)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.map(Promise.scala:375)
+	at scala.concurrent.Future$.apply(Future.scala:653)
+	at play.core.j.JavaAction.apply(JavaAction.scala:113)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:96)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	... 12 common frames omitted
+2017-07-14 10:58:16,250 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:02:23,508 [INFO] from application in scala-execution-context-global-87818 - Shutting down connection pool.
+2017-07-14 11:02:23,559 [INFO] from application in scala-execution-context-global-87818 - Creating Pool for datasource 'default'
+2017-07-14 11:02:23,559 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-87818 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 11:02:23,885 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-87818 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 11:02:23,893 [WARN] from application in scala-execution-context-global-87818 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:02:23,921 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-87818 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 11:02:23,939 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-87818 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 11:02:23,940 [INFO] from play.api.Play in scala-execution-context-global-87818 - Application started (Dev)
+2017-07-14 11:02:23,941 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-107 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:02:23,971 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-107 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:02:23,971 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-107 - ==> Parameters: 1(Integer)
+2017-07-14 11:02:23,993 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-107 - <==      Total: 1
+2017-07-14 11:02:24,031 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-107 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:02:27,781 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:02:27,781 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==> Parameters: 1(Integer)
+2017-07-14 11:02:27,804 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - <==      Total: 1
+2017-07-14 11:02:27,832 [ERROR] from application in application-akka.actor.default-dispatcher-3 - 
+
+! @74jianodf - Internal server error, for (POST) [/update/1] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[IllegalStateException: Error(s) binding form: {"birthday":["Invalid value"]}]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:252)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:337)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:322)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:39)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:38)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.IllegalStateException: Error(s) binding form: {"birthday":["Invalid value"]}
+	at play.data.Form.get(Form.java:761)
+	at views.html.update$.apply(update.template.scala:40)
+	at views.html.update$.render(update.template.scala:49)
+	at views.html.update.render(update.template.scala)
+	at controllers.UserCtr.update(UserCtr.java:73)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$8(Routes.scala:207)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:136)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:135)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:110)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:78)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.core.j.JavaAction.$anonfun$apply$2(JavaAction.scala:113)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete(Promise.scala:368)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete$(Promise.scala:367)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.onComplete(Promise.scala:375)
+	at scala.concurrent.impl.Promise.transform(Promise.scala:29)
+	at scala.concurrent.impl.Promise.transform$(Promise.scala:27)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.transform(Promise.scala:375)
+	at scala.concurrent.Future.map(Future.scala:287)
+	at scala.concurrent.Future.map$(Future.scala:287)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.map(Promise.scala:375)
+	at scala.concurrent.Future$.apply(Future.scala:653)
+	at play.core.j.JavaAction.apply(JavaAction.scala:113)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:96)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	... 12 common frames omitted
+2017-07-14 11:02:36,639 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-111 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:02:36,639 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-111 - ==> Parameters: 1(Integer)
+2017-07-14 11:02:36,661 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-111 - <==      Total: 1
+2017-07-14 11:05:10,930 [INFO] from application in scala-execution-context-global-89573 - Shutting down connection pool.
+2017-07-14 11:05:10,982 [INFO] from application in scala-execution-context-global-89573 - Creating Pool for datasource 'default'
+2017-07-14 11:05:10,983 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-89573 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 11:05:11,313 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-89573 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 11:05:11,329 [WARN] from application in scala-execution-context-global-89573 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:05:11,351 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-89573 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 11:05:11,371 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-89573 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 11:05:11,371 [INFO] from play.api.Play in scala-execution-context-global-89573 - Application started (Dev)
+2017-07-14 11:05:11,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-108 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:05:11,410 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-108 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:05:11,410 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-108 - ==> Parameters: 1(Integer)
+2017-07-14 11:05:11,432 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-108 - <==      Total: 1
+2017-07-14 11:05:11,473 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-108 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:05:16,745 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-5 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:05:16,746 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-5 - ==> Parameters: 1(Integer)
+2017-07-14 11:05:16,767 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-5 - <==      Total: 1
+2017-07-14 11:05:16,794 [ERROR] from application in application-akka.actor.default-dispatcher-5 - 
+
+! @74jib7ec3 - Internal server error, for (POST) [/update/1] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:252)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:337)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:322)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:39)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:38)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.NoSuchElementException: null
+	at com.google.common.collect.AbstractIndexedListIterator.next(AbstractIndexedListIterator.java:80)
+	at scala.collection.convert.Wrappers$JIteratorWrapper.next(Wrappers.scala:40)
+	at scala.collection.IterableLike.head(IterableLike.scala:106)
+	at scala.collection.IterableLike.head$(IterableLike.scala:105)
+	at scala.collection.AbstractIterable.head(Iterable.scala:54)
+	at scala.collection.TraversableLike.last(TraversableLike.scala:431)
+	at scala.collection.TraversableLike.last$(TraversableLike.scala:430)
+	at scala.collection.AbstractTraversable.last(Traversable.scala:104)
+	at play.api.i18n.DefaultMessagesApi.$anonfun$apply$3(Messages.scala:472)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.i18n.DefaultMessagesApi.apply(Messages.scala:472)
+	at play.i18n.MessagesApi.get(MessagesApi.java:106)
+	at play.data.Form.lambda$errorsAsJson$14(Form.java:725)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at play.data.Form.errorsAsJson(Form.java:721)
+	at play.data.Form.errorsAsJson(Form.java:711)
+	at play.data.Form.get(Form.java:761)
+	at views.html.update$.apply(update.template.scala:40)
+	at views.html.update$.render(update.template.scala:49)
+	at views.html.update.render(update.template.scala)
+	at controllers.UserCtr.update(UserCtr.java:73)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$8(Routes.scala:207)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:136)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:135)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:110)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:78)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.core.j.JavaAction.$anonfun$apply$2(JavaAction.scala:113)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete(Promise.scala:368)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete$(Promise.scala:367)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.onComplete(Promise.scala:375)
+	at scala.concurrent.impl.Promise.transform(Promise.scala:29)
+	at scala.concurrent.impl.Promise.transform$(Promise.scala:27)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.transform(Promise.scala:375)
+	at scala.concurrent.Future.map(Future.scala:287)
+	at scala.concurrent.Future.map$(Future.scala:287)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.map(Promise.scala:375)
+	at scala.concurrent.Future$.apply(Future.scala:653)
+	at play.core.j.JavaAction.apply(JavaAction.scala:113)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:96)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	... 12 common frames omitted
+2017-07-14 11:05:16,795 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:05:22,145 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-108 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:05:22,145 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-108 - ==> Parameters: 1(Integer)
+2017-07-14 11:05:22,167 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-108 - <==      Total: 1
+2017-07-14 11:05:49,719 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-118 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:05:49,719 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-118 - ==> Parameters: 1(Integer)
+2017-07-14 11:05:49,741 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-118 - <==      Total: 1
+2017-07-14 11:05:54,951 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:05:54,951 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - ==> Parameters: 1(Integer)
+2017-07-14 11:05:54,973 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-3 - <==      Total: 1
+2017-07-14 11:05:54,997 [ERROR] from application in application-akka.actor.default-dispatcher-3 - 
+
+! @74jib9ipc - Internal server error, for (POST) [/update/1] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:252)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:337)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:322)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:39)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:38)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.NoSuchElementException: null
+	at com.google.common.collect.AbstractIndexedListIterator.next(AbstractIndexedListIterator.java:80)
+	at scala.collection.convert.Wrappers$JIteratorWrapper.next(Wrappers.scala:40)
+	at scala.collection.IterableLike.head(IterableLike.scala:106)
+	at scala.collection.IterableLike.head$(IterableLike.scala:105)
+	at scala.collection.AbstractIterable.head(Iterable.scala:54)
+	at scala.collection.TraversableLike.last(TraversableLike.scala:431)
+	at scala.collection.TraversableLike.last$(TraversableLike.scala:430)
+	at scala.collection.AbstractTraversable.last(Traversable.scala:104)
+	at play.api.i18n.DefaultMessagesApi.$anonfun$apply$3(Messages.scala:472)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.i18n.DefaultMessagesApi.apply(Messages.scala:472)
+	at play.i18n.MessagesApi.get(MessagesApi.java:106)
+	at play.data.Form.lambda$errorsAsJson$14(Form.java:725)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at play.data.Form.errorsAsJson(Form.java:721)
+	at play.data.Form.errorsAsJson(Form.java:711)
+	at play.data.Form.get(Form.java:761)
+	at views.html.update$.apply(update.template.scala:40)
+	at views.html.update$.render(update.template.scala:49)
+	at views.html.update.render(update.template.scala)
+	at controllers.UserCtr.update(UserCtr.java:73)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$8(Routes.scala:207)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:136)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:135)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:110)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:78)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.core.j.JavaAction.$anonfun$apply$2(JavaAction.scala:113)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete(Promise.scala:368)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete$(Promise.scala:367)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.onComplete(Promise.scala:375)
+	at scala.concurrent.impl.Promise.transform(Promise.scala:29)
+	at scala.concurrent.impl.Promise.transform$(Promise.scala:27)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.transform(Promise.scala:375)
+	at scala.concurrent.Future.map(Future.scala:287)
+	at scala.concurrent.Future.map$(Future.scala:287)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.map(Promise.scala:375)
+	at scala.concurrent.Future$.apply(Future.scala:653)
+	at play.core.j.JavaAction.apply(JavaAction.scala:113)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:96)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	... 12 common frames omitted
+2017-07-14 11:07:03,505 [INFO] from application in scala-execution-context-global-90771 - Shutting down connection pool.
+2017-07-14 11:07:03,559 [INFO] from application in scala-execution-context-global-90771 - Creating Pool for datasource 'default'
+2017-07-14 11:07:03,560 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-90771 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 11:07:03,893 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-90771 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 11:07:03,902 [WARN] from application in scala-execution-context-global-90771 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:07:03,924 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-90771 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 11:07:03,944 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-90771 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 11:07:03,944 [INFO] from play.api.Play in scala-execution-context-global-90771 - Application started (Dev)
+2017-07-14 11:07:03,945 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-128 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:07:03,974 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-128 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:07:03,974 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-128 - ==> Parameters: 1(Integer)
+2017-07-14 11:07:03,997 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-128 - <==      Total: 1
+2017-07-14 11:07:04,034 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-128 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:07:06,068 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:07:06,068 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - ==> Parameters: 1(Integer)
+2017-07-14 11:07:06,091 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - <==      Total: 1
+2017-07-14 11:07:06,117 [ERROR] from application in application-akka.actor.default-dispatcher-6 - 
+
+! @74jibdk4m - Internal server error, for (POST) [/update/1] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchElementException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:252)
+	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:337)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:322)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:39)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:38)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.util.NoSuchElementException: null
+	at com.google.common.collect.AbstractIndexedListIterator.next(AbstractIndexedListIterator.java:80)
+	at scala.collection.convert.Wrappers$JIteratorWrapper.next(Wrappers.scala:40)
+	at scala.collection.IterableLike.head(IterableLike.scala:106)
+	at scala.collection.IterableLike.head$(IterableLike.scala:105)
+	at scala.collection.AbstractIterable.head(Iterable.scala:54)
+	at scala.collection.TraversableLike.last(TraversableLike.scala:431)
+	at scala.collection.TraversableLike.last$(TraversableLike.scala:430)
+	at scala.collection.AbstractTraversable.last(Traversable.scala:104)
+	at play.api.data.FormError.message$lzycompute(Form.scala:420)
+	at play.api.data.FormError.message(Form.scala:420)
+	at views.html.helper.FieldElements.$anonfun$errors$3(Helpers.scala:38)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:52)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:234)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:104)
+	at views.html.helper.FieldElements.$anonfun$errors$2(Helpers.scala:38)
+	at scala.Option.getOrElse(Option.scala:121)
+	at views.html.helper.FieldElements.errors(Helpers.scala:34)
+	at views.html.helper.FieldElements.hasErrors(Helpers.scala:44)
+	at views.html.helper.defaultFieldConstructor$.apply(defaultFieldConstructor.template.scala:36)
+	at views.html.helper.defaultFieldConstructor$.$anonfun$f$1(defaultFieldConstructor.template.scala:57)
+	at views.html.helper.FieldConstructor$$anon$1.apply(Helpers.scala:75)
+	at views.html.helper.input$.apply(input.template.scala:32)
+	at views.html.helper.inputDate$.apply(inputDate.template.scala:33)
+	at views.html.inputForm$.apply(inputForm.template.scala:38)
+	at views.html.update$.$anonfun$apply$1(update.template.scala:41)
+	at views.html.helper.form$.apply(form.template.scala:36)
+	at views.html.update$.apply(update.template.scala:40)
+	at views.html.update$.render(update.template.scala:49)
+	at views.html.update.render(update.template.scala)
+	at controllers.UserCtr.update(UserCtr.java:73)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$8(Routes.scala:207)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:136)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:135)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:110)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:78)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.core.j.JavaAction.$anonfun$apply$2(JavaAction.scala:113)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete(Promise.scala:368)
+	at scala.concurrent.impl.Promise$KeptPromise$Kept.onComplete$(Promise.scala:367)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.onComplete(Promise.scala:375)
+	at scala.concurrent.impl.Promise.transform(Promise.scala:29)
+	at scala.concurrent.impl.Promise.transform$(Promise.scala:27)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.transform(Promise.scala:375)
+	at scala.concurrent.Future.map(Future.scala:287)
+	at scala.concurrent.Future.map$(Future.scala:287)
+	at scala.concurrent.impl.Promise$KeptPromise$Successful.map(Promise.scala:375)
+	at scala.concurrent.Future$.apply(Future.scala:653)
+	at play.core.j.JavaAction.apply(JavaAction.scala:113)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:96)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	... 12 common frames omitted
+2017-07-14 11:07:32,171 [INFO] from application in scala-execution-context-global-91099 - Shutting down connection pool.
+2017-07-14 11:07:32,227 [INFO] from application in scala-execution-context-global-91099 - Creating Pool for datasource 'default'
+2017-07-14 11:07:32,227 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-91099 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 11:07:32,561 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-91099 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 11:07:32,570 [WARN] from application in scala-execution-context-global-91099 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:07:32,591 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-91099 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 11:07:32,611 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-91099 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 11:07:32,611 [INFO] from play.api.Play in scala-execution-context-global-91099 - Application started (Dev)
+2017-07-14 11:07:32,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-130 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:07:32,644 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:07:32,644 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==> Parameters: 1(Integer)
+2017-07-14 11:07:32,666 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - <==      Total: 1
+2017-07-14 11:07:32,706 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:07:39,105 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:07:39,105 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==> Parameters: 1(Integer)
+2017-07-14 11:07:39,127 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - <==      Total: 1
+2017-07-14 11:07:43,199 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-131 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:08:00,708 [INFO] from application in scala-execution-context-global-91429 - Shutting down connection pool.
+2017-07-14 11:08:00,776 [INFO] from application in scala-execution-context-global-91429 - Creating Pool for datasource 'default'
+2017-07-14 11:08:00,776 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-91429 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 11:08:01,107 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-91429 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 11:08:01,115 [WARN] from application in scala-execution-context-global-91429 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:08:01,137 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-91429 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 11:08:01,158 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-91429 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 11:08:01,159 [INFO] from play.api.Play in scala-execution-context-global-91429 - Application started (Dev)
+2017-07-14 11:08:01,159 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-131 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:08:01,192 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:08:01,192 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - ==> Parameters: 1(Integer)
+2017-07-14 11:08:01,214 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - <==      Total: 1
+2017-07-14 11:08:01,252 [WARN] from application in application-akka.actor.default-dispatcher-2 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:08:01,342 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-131 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:08:01,343 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-126 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:08:01,343 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-128 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:08:03,807 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:08:03,808 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - ==> Parameters: 1(Integer)
+2017-07-14 11:08:03,829 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-2 - <==      Total: 1
+2017-07-14 11:09:29,972 [INFO] from application in scala-execution-context-global-92369 - Shutting down connection pool.
+2017-07-14 11:09:30,042 [INFO] from application in scala-execution-context-global-92369 - Creating Pool for datasource 'default'
+2017-07-14 11:09:30,042 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-92369 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-14 11:09:30,394 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-92369 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-14 11:09:30,402 [WARN] from application in scala-execution-context-global-92369 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:09:30,425 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-92369 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-14 11:09:30,448 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-92369 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-14 11:09:30,448 [INFO] from play.api.Play in scala-execution-context-global-92369 - Application started (Dev)
+2017-07-14 11:09:30,449 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-135 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:09:30,484 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:09:30,484 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - ==> Parameters: 1(Integer)
+2017-07-14 11:09:30,507 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-4 - <==      Total: 1
+2017-07-14 11:09:30,556 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:09:30,580 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - ==> Parameters: Nguyen Van A(String), 2017-07-15 00:00:00.0(Timestamp), 098xxxxx(String), nguyenq@gmail.com(String), 1(Integer)
+2017-07-14 11:09:30,624 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-4 - <==    Updates: 1
+2017-07-14 11:09:30,671 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:09:30,724 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-122 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:09:30,724 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-122 - ==> Parameters: 
+2017-07-14 11:09:30,746 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-122 - <==      Total: 1
+2017-07-14 11:10:04,394 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-134 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:10:04,394 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-134 - ==> Parameters: 1(Integer)
+2017-07-14 11:10:04,416 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-134 - <==      Total: 1
+2017-07-14 11:10:28,482 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-133 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:10:28,755 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:10:28,755 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - ==> Parameters: 1(Integer)
+2017-07-14 11:10:28,777 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-6 - <==      Total: 1
+2017-07-14 11:10:28,822 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-6 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:10:28,823 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-6 - ==> Parameters: Nguyen Van A(String), 2017-07-15 00:00:00.0(Timestamp), 098xxxxx(String), nguyenq@gmail.com(String), 1(Integer)
+2017-07-14 11:10:28,865 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-6 - <==    Updates: 1
+2017-07-14 11:10:28,961 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-108 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:10:28,961 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-108 - ==> Parameters: 
+2017-07-14 11:10:28,983 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-108 - <==      Total: 1
+2017-07-14 11:12:21,239 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-133 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:12:21,284 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-133 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:12:21,284 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-133 - ==> Parameters: 1(Integer)
+2017-07-14 11:12:21,306 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-133 - <==      Total: 1
+2017-07-14 11:12:32,396 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-8 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:12:32,396 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-8 - ==> Parameters: 1(Integer)
+2017-07-14 11:12:32,418 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-8 - <==      Total: 1
+2017-07-14 11:12:32,462 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-8 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:12:32,462 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-8 - ==> Parameters: Nguyen Van A1(String), 2017-07-17 00:00:00.0(Timestamp), 098xxxxx1(String), nguyenq@gmail.com1(String), 1(Integer)
+2017-07-14 11:12:32,531 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-8 - <==    Updates: 1
+2017-07-14 11:12:32,646 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-139 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:12:32,647 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-139 - ==> Parameters: 
+2017-07-14 11:12:32,669 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-139 - <==      Total: 1
+2017-07-14 11:12:38,159 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-118 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:12:38,159 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-118 - ==> Parameters: 1(Integer)
+2017-07-14 11:12:38,181 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-118 - <==      Total: 1
+2017-07-14 11:12:41,087 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-8 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:12:41,088 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-8 - ==> Parameters: 1(Integer)
+2017-07-14 11:12:41,110 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-8 - <==      Total: 1
+2017-07-14 11:12:41,153 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-8 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:12:41,154 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-8 - ==> Parameters: Nguyen Van A1(String), 2017-07-16 00:00:00.0(Timestamp), 098xxxxx1(String), nguyenq@gmail.com1(String), 1(Integer)
+2017-07-14 11:12:41,198 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-8 - <==    Updates: 1
+2017-07-14 11:12:41,300 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-137 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:12:41,300 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-137 - ==> Parameters: 
+2017-07-14 11:12:41,322 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-137 - <==      Total: 1
+2017-07-14 11:12:58,021 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-144 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-14 11:12:58,496 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-139 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:12:58,497 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-139 - ==> Parameters: 1(Integer)
+2017-07-14 11:12:58,519 [DEBUG] from service.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-139 - <==      Total: 1
+2017-07-14 11:13:10,879 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-10 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
+2017-07-14 11:13:10,879 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-10 - ==> Parameters: 1(Integer)
+2017-07-14 11:13:10,901 [DEBUG] from service.UserMapper.getUserById in application-akka.actor.default-dispatcher-10 - <==      Total: 1
+2017-07-14 11:13:10,945 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-10 - ==>  Preparing: UPDATE users SET fullname = ?, birthday = ?, phone = ?, email = ?, date_modified = NOW() WHERE id = ? 
+2017-07-14 11:13:10,946 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-10 - ==> Parameters: Nguyen Van A1(String), 2017-09-20 00:00:00.0(Timestamp), 098xxxxx1(String), nguyenq@gmail.com1(String), 1(Integer)
+2017-07-14 11:13:10,990 [DEBUG] from service.UserMapper.update in application-akka.actor.default-dispatcher-10 - <==    Updates: 1
+2017-07-14 11:13:11,089 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-133 - ==>  Preparing: SELECT * FROM users ORDER BY id 
+2017-07-14 11:13:11,090 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-133 - ==> Parameters: 
+2017-07-14 11:13:11,112 [DEBUG] from service.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-133 - <==      Total: 1
