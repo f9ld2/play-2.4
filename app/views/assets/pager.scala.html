@@ -1,56 +1,24 @@
-@(page:Int, pageSize:Int, total:Int, route:Int => Call, bound:Int = 5)
-@lowbound() = @{
-    ((page.toDouble / bound).floor * bound) toInt
-}
-@highbound() = @{
-    if ((lowbound() + bound) * pageSize >= total)
-        total / pageSize + 1
-    else
-        lowbound() + bound
-}
-
+@(oPager: utils.Pager, route:Int => Call)
 <div class="pb_centered">
     <div class="pagination">
         <ul>
-            @if(page == 1){
-                <li class="disabled"><a href="#">Previous</a></li>
-            } else {
-                <li><a href="@route(page-1)">Previous</a></li>
-
-            }
-
-            @if(page < bound) {
-                <li class="disabled"><a href="#">&laquo;</a></li>
-            } else {
-                @if(lowbound()-bound <= 0) {
-                    <li><a href="@route(1)">&laquo;</a></li>
-                } else {
-                    <li><a href="@route(lowbound()-bound)">&laquo;</a></li>
-                }
-            }
-
-            @for(i <- lowbound().max(1) until page) {
-                <li><a href="@route(i)">@i</a></li>
-            }
-
-            <li class="active"><a href="#">@page</a></li>
-
-            @for(i <- page+1 to highbound()) {
-                <li><a href="@route(i)">@i</a></li>
-            }
-
-            @if(highbound() * pageSize <= total && highbound() > page && page * pageSize != total) {
-                <li><a href="@route(highbound())">&raquo;</a></li>
-            } else {
-                <li class="disabled"><a href="#">&raquo;</a></li>
-            }
-
-            @if(page < highbound()) {
-                <li><a href="@route(page+1)">Next</a></li>
-            } else {
-                <li class="disabled"><a href="#">Next</a></li>
-
-            }
+        	@if(oPager.getPage() != 1){
+        		<li><a href="@route(1)">&lt;&lt;</a></li>
+        		<li><a href="@route(oPager.getPage()-1)">&lt;</a></li>
+        	}
+            
+            @for( i <- oPager.getStart() to oPager.getEnd()){
+		         @if(i == oPager.getPage()){
+		         	<li>[@i]</li>
+		         } else {
+		         	<li><a href="@route(i)">@i</a></li>
+		         }
+		    }
+      
+			@if(oPager.getPageCount() != oPager.getPage()){
+        		<li><a href="@route(oPager.getPage()+1)">&gt;</a></li>
+        		<li><a href="@route(oPager.getPageCount())">&gt;&gt;</a></li>
+			}
         </ul>
     </div>
 </div>

@@ -1,4 +1,4 @@
-@(users: List[model.User])
+@(users: List[model.User], pager: utils.Pager)
 @assets.put("stylesheets/index.css")
 @assets.put("javascript/index.js", "footer")
 
@@ -18,7 +18,7 @@
 	}
 
 	<a href="@routes.UserCtr.create()">create</a><br/>
-	@if(!users.isEmpty()) {
+	@if(users !=null && !users.isEmpty()) {
         <ul>
             @for(user <- users) {
                 <li>@user.getId() - @user.getFullname() - @user.getEmail() - @user.getPhone() - @user.getBirthday().format("yyyy/MM/dd") - @user.getDateAdded().format("yyyy/MM/dd") <a href="@routes.UserCtr.update(user.getId())">edit</a> | <a href="@routes.UserCtr.delete(user.getId())">delete</a></li>
@@ -26,5 +26,7 @@
         </ul>
     }
     
-    @assets.pager(5, 20, 150, routes.UserCtr.list(_))
+    @if(pager != null){
+    	@assets.pager(pager, routes.UserCtr.list(_))
+    }
 }

@@ -6,14 +6,16 @@
 GET     /                   	controllers.UserCtr.list(page:Int=1)
 GET     /:page                  controllers.UserCtr.list(page:Int)
 
+# Add user
+GET     /users/new              controllers.UserCtr.create()
+POST    /users                  controllers.UserCtr.save()
 
-POST	/create					controllers.UserCtr.create()
-GET		/create					controllers.UserCtr.create()
+# Edit existing user
+GET     /users/:id              controllers.UserCtr.edit(id:Int)
+POST    /users/:id              controllers.UserCtr.update(id:Int)
 
-POST    /update/$id<[0-9]+>		controllers.UserCtr.update(id: Int)
-GET		/update/$id<[0-9]+>		controllers.UserCtr.update(id: Int)
-
-GET		/delete/$id<[0-9]+>		controllers.UserCtr.delete(id: Int)
+# Delete a computer
+GET /users/:id/delete 			controllers.UserCtr.delete(id:Int)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

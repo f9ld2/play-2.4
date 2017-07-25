@@ -7,7 +7,10 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
-	public List<User> all();
+	
+	public int count();
+	
+	public List<User> all(@Param("offset") Integer offset, @Param("limit") Integer limit);
 
     public User getUserById(Integer id);
     
