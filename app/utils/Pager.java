@@ -52,12 +52,12 @@ public class Pager {
         this.end = ((this.start + this.frameSize - 1) < this.pageCount) ? (this.start + this.frameSize - 1) : this.pageCount;
     } 
 	
-	public static int getOffset(int page, int pageSize, int totalCount)
+	public int getOffset()
     {
-        if (pageSize>0) {
-            int pages  = (int) Math.ceil(totalCount / pageSize);
-            page = Math.max(1, Math.min(pages, page));
-            return pageSize * ( page - 1 );
+        if (this.pageSize>0) {
+            int pages  = (int) Math.ceil(this.totalCount / this.pageSize);
+            page = Math.max(1, Math.min(pages, this.page));
+            return this.pageSize * ( page - 1 );
         }
         
         return 0;

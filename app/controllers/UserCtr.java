@@ -38,15 +38,10 @@ public class UserCtr extends Controller {
     		pager = new Pager(page, pageSize, totalCount);
     		
     		users = userService.all(
-	    		Pager.getOffset(
-					page, 
-					pageSize, 
-					totalCount
-				), 
+	    		pager.getOffset(), 
 	    		pageSize
 			);
     	}
-    	
     	
         return ok(list.render(users, pager));
     }
