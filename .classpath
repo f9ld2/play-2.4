@@ -341,6 +341,7 @@
       <attribute name="javadoc_location" value="jar:file:/Users/hoang-hd/.ivy2/cache/com.google.code.gson/gson/docs/gson-2.8.1-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
+  <classpathentry sourcepath="/Users/hoang-hd/.ivy2/cache/commons-httpclient/commons-httpclient/srcs/commons-httpclient-3.1-sources.jar" kind="lib" path="/Users/hoang-hd/.ivy2/cache/commons-httpclient/commons-httpclient/jars/commons-httpclient-3.1.jar"/>
   <classpathentry sourcepath="/Users/hoang-hd/.ivy2/cache/com.typesafe.play/play-test_2.12/srcs/play-test_2.12-2.6.1-sources.jar" kind="lib" path="/Users/hoang-hd/.ivy2/cache/com.typesafe.play/play-test_2.12/jars/play-test_2.12-2.6.1.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/Users/hoang-hd/.ivy2/cache/com.typesafe.play/play-test_2.12/docs/play-test_2.12-2.6.1-javadoc.jar!/"/>

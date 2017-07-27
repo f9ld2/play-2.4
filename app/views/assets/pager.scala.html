@@ -3,21 +3,21 @@
     <div class="pagination">
         <ul>
         	@if(oPager.getPage() != 1){
-        		<li><a href="@route(1)">&lt;&lt;</a></li>
-        		<li><a href="@route(oPager.getPage()-1)">&lt;</a></li>
+        		<li><a href="@oPager.makeUrl(route(1).url)">&lt;&lt;</a></li>
+        		<li><a href="@oPager.makeUrl(route(oPager.getPage()-1).url)">&lt;</a></li>
         	}
             
             @for( i <- oPager.getStart() to oPager.getEnd()){
 		         @if(i == oPager.getPage()){
 		         	<li>[@i]</li>
 		         } else {
-		         	<li><a href="@route(i)">@i</a></li>
+		         	<li><a href="@oPager.makeUrl(route(i).url)">@i</a></li>
 		         }
 		    }
       
 			@if(oPager.getPageCount() != oPager.getPage()){
-        		<li><a href="@route(oPager.getPage()+1)">&gt;</a></li>
-        		<li><a href="@route(oPager.getPageCount())">&gt;&gt;</a></li>
+        		<li><a href="@oPager.makeUrl(route(oPager.getPage()+1).url)">&gt;</a></li>
+        		<li><a href="@oPager.makeUrl(route(oPager.getPageCount()).url)">&gt;&gt;</a></li>
 			}
         </ul>
     </div>

@@ -7,7 +7,11 @@ import play.mvc.*;
 import views.html.user.*;
 import views.html.helper.form;
 import model.User;
+
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import javax.inject.Inject;
 import com.google.gson.Gson;
 

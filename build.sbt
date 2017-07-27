@@ -14,7 +14,8 @@ libraryDependencies ++= Seq(
   "org.mybatis" % "mybatis-guice" % "3.9",
   "mysql" % "mysql-connector-java" % "6.0.6",
   "com.google.inject.extensions" % "guice-multibindings" % "4.1.0",
-  "com.google.code.gson" % "gson" % "2.8.1"
+  "com.google.code.gson" % "gson" % "2.8.1",
+  "org.apache.httpcomponents" % "httpclient" % "4.5.3"
 )
 
 routesGenerator := InjectedRoutesGenerator

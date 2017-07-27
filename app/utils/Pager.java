@@ -1,7 +1,13 @@
 package utils;
 
+import org.apache.http.client.utils.URIBuilder;
+import java.net.URISyntaxException;
+import java.util.HashMap;
+import java.util.Map;
+import play.mvc.Http;
 import play.Play;
 
+@SuppressWarnings("deprecation")
 public class Pager {
 	private int page;
 
@@ -62,18 +68,13 @@ public class Pager {
         this.range();
 	}
 	
-	private void range()
-    {
+	private void range() {
         this.start = 1;
         
-        if ( ( this.page - this.frameSize/2 ) > 0 )
-        {
-            if ( ( this.page + this.frameSize/2 ) > this.pageCount )
-            {
+        if ( ( this.page - this.frameSize/2 ) > 0 ) {
+            if ( ( this.page + this.frameSize/2 ) > this.pageCount ) {
             	this.start = ( ( this.pageCount - this.frameSize ) > 0 ) ? ( this.pageCount - this.frameSize + 1) : 1;
-            }
-            else
-            {
+            } else {
             	this.start = this.page - (int) Math.floor( this.frameSize/2 );
             }
         }
@@ -81,11 +82,9 @@ public class Pager {
         this.end = ((this.start + this.frameSize - 1) < this.pageCount) ? (this.start + this.frameSize - 1) : this.pageCount;
     } 
 	
-	public int getOffset()
-    {
+	public int getOffset() {
         if (this.pageSize>0) {
-            int pages  = (int) Math.ceil(this.totalCount / this.pageSize);
-            page = Math.max(1, Math.min(pages, this.page));
+            page = Math.max(1, Math.min(this.pageCount, this.page));
             return this.pageSize * ( page - 1 );
         }
         
@@ -162,5 +161,46 @@ public class Pager {
 
 	public void setEnd(int end) {
 		this.end = end;
+	}
+	
+	public String makeUrl(String path){
+		return makeUrl(path, new HashMap<String,String>());
+	}
+	
+	public String makeUrl(Map<String, String> params){
+		return makeUrl(Http.Context.current().request().path(), params);
+	}
+	
+	public String makeUrl(String path, Map<String, String> params) {
+		Map<String, String[]> query = Http.Context.current().request().queryString();
+		
+		URIBuilder builder = new URIBuilder();
+		builder.setPath(path);
+		
+		for (Map.Entry<String, String[]> entry : query.entrySet()){
+			String key = entry.getKey();
+			if(key.endsWith("[]")){
+				key = key.substring(0, key.length()-2);
+			}
+			
+			if(!params.containsKey(key) && !params.containsKey(key+"[]")){
+				String[] values = entry.getValue();
+				for(int i=0; i<values.length; i++){
+					builder.addParameter(entry.getKey(), values[i]);
+				}
+			}
+		}
+		
+		for (Map.Entry<String, String> entry : params.entrySet()){
+			builder.addParameter(entry.getKey(), entry.getValue());
+		}
+		
+		try {
+			return builder.build().toString();
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		}
+		
+		return null;
 	}
 }
