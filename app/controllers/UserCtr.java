@@ -28,18 +28,17 @@ public class UserCtr extends Controller {
 	);
 	
     public Result list(int page) {
-    	int pageSize = 10;
     	Pager pager = null;
     	List<User> users = null;
     	
     	int totalCount = userService.count();
     	
     	if(totalCount>0){
-    		pager = new Pager(page, pageSize, totalCount);
+    		pager = new Pager(page, totalCount);
     		
     		users = userService.all(
 	    		pager.getOffset(), 
-	    		pageSize
+	    		pager.getPageSize()
 			);
     	}
     	

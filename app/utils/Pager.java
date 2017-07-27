@@ -1,5 +1,7 @@
 package utils;
 
+import play.Play;
+
 public class Pager {
 	private int page;
 
@@ -18,13 +20,40 @@ public class Pager {
     private int start;
     
     private int end;
-
-	public Pager(int page, int pageSize, int totalCount) {
-        this.pageSize 	= Math.max(pageSize, 1);
+    
+	public Pager(int page, int totalCount) {
+        this.init(
+    		page, 
+    		totalCount, 
+    		Play.application().configuration().getInt("setting.pageSize"), 
+    		Play.application().configuration().getInt("setting.frameSize")
+		);
+	}
+	
+	public Pager(int page, int totalCount, int pageSize) {
+        this.init(
+    		page, 
+    		totalCount, 
+    		pageSize, 
+    		Play.application().configuration().getInt("setting.frameSize")
+		);
+	}
+	
+	public Pager(int page, int totalCount, int pageSize, int frameSize) {
+        this.init(
+    		page, 
+    		totalCount, 
+    		pageSize, 
+    		frameSize
+		);
+	}
+	
+	private void init(int page, int totalCount, int pageSize, int frameSize){
+		this.pageSize 	= Math.max(pageSize, 1);
         this.totalCount = Math.max(totalCount, 0);
         
-        this.pageCount  = totalCount / pageSize 
-        					+ (totalCount % pageSize == 0 ? 0 : 1);
+        this.pageCount  = totalCount / this.pageSize 
+        					+ (totalCount % this.pageSize == 0 ? 0 : 1);
         
         this.page 		= Math.max(1, Math.min(this.pageCount, page));
         this.firstRow   = this.pageSize * ( this.page - 1 );
