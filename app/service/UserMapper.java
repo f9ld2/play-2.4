@@ -1,16 +1,15 @@
 package service;
 
 import model.User;
-
+import utils.Pager;
 import java.util.List;
-
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
 	
 	public int count();
 	
-	public List<User> all(@Param("offset") Integer offset, @Param("limit") Integer limit);
+	public List<User> all(@Param("pager") Pager pager);
 
     public User getUserById(Integer id);
     

@@ -9,13 +9,17 @@ import views.html.helper.form;
 import model.User;
 import java.util.List;
 import javax.inject.Inject;
-
 import com.google.gson.Gson;
 
-import service.UserMapper;
+import utils.Messages;
 import utils.Pager;
+import service.UserMapper;
 import play.data.FormFactory;
 
+/**
+ * @author hoang-hd
+ *
+ */
 public class UserCtr extends Controller {
 	@Inject
     private UserMapper userService;
@@ -30,16 +34,11 @@ public class UserCtr extends Controller {
     public Result list(int page) {
     	Pager pager = null;
     	List<User> users = null;
-    	
     	int totalCount = userService.count();
     	
     	if(totalCount>0){
     		pager = new Pager(page, totalCount);
-    		
-    		users = userService.all(
-	    		pager.getOffset(), 
-	    		pager.getPageSize()
-			);
+    		users = userService.all(pager);
     	}
     	
         return ok(list.render(users, pager));
@@ -59,7 +58,7 @@ public class UserCtr extends Controller {
         User user = userForm.get();
         userService.insert(user);
         
-        flash("success", "User " + user.getFullname() + " has been created");
+        flash("success", Messages.at("alert.success.created", "User", user.getFullname()));
         return GO_HOME;
     }
     
@@ -67,7 +66,7 @@ public class UserCtr extends Controller {
     	User user = userService.getUserById(id);
     	
     	if(user == null){
-    		return notFound(String.format("User %s does not exist.", id));
+    		return notFound(Messages.at("alert.fail.find.not_exist", "User", id));
     	}
     	
     	Form<User> userForm = formFactory.form(User.class).fill(user);
@@ -83,7 +82,7 @@ public class UserCtr extends Controller {
         	User user = userForm.get();
         	userService.update(id, user);
         	
-        	flash("success", "User " + user.getFullname() + " has been updated");
+        	flash("success", Messages.at("alert.success.updated", "User", user.getFullname()));
         	return GO_HOME;
         }
     }
@@ -91,11 +90,11 @@ public class UserCtr extends Controller {
     public Result delete(int id) {
     	User user = userService.getUserById(id);
     	if(user == null){
-    		return notFound(String.format("User %s does not exist.", id));
+    		return notFound(Messages.at("alert.fail.find.not_exist", "User", id));
     	}
     	
     	userService.delete(id);
-    	flash("success", "User has been deleted");
+    	flash("success", Messages.at("alert.success.deleted", "User"));
     	
     	return GO_HOME;
     }

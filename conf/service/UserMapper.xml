@@ -12,8 +12,8 @@
         SELECT * 
         FROM users
         ORDER BY id
-        <if test="offset>-1 and limit>0">
-		    LIMIT #{offset}, #{limit}
+        <if test="pager.offset>-1 and pager.pageSize>0">
+		    LIMIT #{pager.offset}, #{pager.pageSize}
 		</if>
     </select>
 
