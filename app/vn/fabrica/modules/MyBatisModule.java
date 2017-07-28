@@ -21,7 +21,7 @@ public class MyBatisModule extends org.mybatis.guice.MyBatisModule {
         bindDataSourceProviderType(PlayDataSourceProvider.class);
         bindTransactionFactoryType(JdbcTransactionFactory.class);
         mapUnderscoreToCamelCase(true);
-        addMapperClasses("vn.fabrica.mappers");
+        addMapperClasses("vn.fabrica.dao");
     }
 
     /* Provides a {@link DataSource} from the {@link Database} which can be injected from Play. */
