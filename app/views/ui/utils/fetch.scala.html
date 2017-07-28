@@ -1,0 +1,9 @@
+@(panel: String = "header", key: String = "")@{
+	if(ctx.args.containsKey(panel)){
+		if(panel == "assign"){
+			Html(ctx().args.get("assign").asInstanceOf[Map[String, String]].get(key))
+		} else {
+			Html(ctx().args.get(panel).asInstanceOf[List[String]].mkString("\n"))
+		}
+	}
+}

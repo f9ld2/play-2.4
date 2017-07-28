@@ -1,10 +1,10 @@
 @(id: Int, userForm: Form[model.User])
-@assets.put("stylesheets/index.css")
-@assets.put("javascript/index.js", "footer")
+@ui.utils.addCss("stylesheets/index.css")
+@ui.utils.addScript("javascript/index.js")
 
 @import helper._
 
-@main("Form User") {
+@ui.templates.main {
 	@form(action = routes.UserCtr.update(id)) {
 		@inputForm(userForm)
 	}

@@ -27,7 +27,7 @@ public class Pager {
     
     private int end;
     
-	public Pager(int page, int totalCount) {
+    public void init(int page, int totalCount) {
         this.init(
     		page, 
     		totalCount, 
@@ -36,7 +36,7 @@ public class Pager {
 		);
 	}
 	
-	public Pager(int page, int totalCount, int pageSize) {
+	public void init(int page, int totalCount, int pageSize) {
         this.init(
     		page, 
     		totalCount, 
@@ -45,16 +45,7 @@ public class Pager {
 		);
 	}
 	
-	public Pager(int page, int totalCount, int pageSize, int frameSize) {
-        this.init(
-    		page, 
-    		totalCount, 
-    		pageSize, 
-    		frameSize
-		);
-	}
-	
-	private void init(int page, int totalCount, int pageSize, int frameSize){
+	public void init(int page, int totalCount, int pageSize, int frameSize){
 		this.pageSize 	= Math.max(pageSize, 1);
         this.totalCount = Math.max(totalCount, 0);
         

@@ -4,7 +4,7 @@ import play.*;
 import play.api.libs.json.Json;
 import play.data.Form;
 import play.mvc.*;
-import views.html.user.*;
+import views.html.ui.user.*;
 import views.html.helper.form;
 import model.User;
 
@@ -31,17 +31,19 @@ public class UserCtr extends Controller {
 	@Inject
 	private FormFactory formFactory;
 	
+	@Inject
+	private Pager pager;
+	
 	private Result GO_HOME = Results.redirect(
          routes.UserCtr.list(1)
 	);
 	
     public Result list(int page) {
-    	Pager pager = null;
     	List<User> users = null;
     	int totalCount = userService.count();
     	
     	if(totalCount>0){
-    		pager = new Pager(page, totalCount);
+    		pager.init(page, totalCount);
     		users = userService.all(pager);
     	}
     	

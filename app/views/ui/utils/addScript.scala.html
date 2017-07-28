@@ -1,4 +1,4 @@
-@(src: String, panel: String = "header")
+@(src: String, panel: String = "footer")
 
 @{
     var list = ctx().args.get(panel).asInstanceOf[List[String]];
@@ -7,5 +7,5 @@
         ctx().args.put(panel, list);
     }
 
-    val added = list.add(src);
+    val added = list.add("<script src=\"" + routes.Assets.versioned(src) + "\" type=\"text/javascript\"></script>");
 }

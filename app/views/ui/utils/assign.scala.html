@@ -1,0 +1,10 @@
+@(key: String, value: String)
+@{
+    var map = ctx().args.get("assign").asInstanceOf[Map[String, String]];
+    if(map == null) {
+        map = new HashMap[String, String]();
+        ctx().args.put("assign", map);
+    }
+
+    val added = map.put(key, value);
+}

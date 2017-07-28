@@ -1,8 +1,9 @@
 @(users: List[model.User], pager: utils.Pager)
-@assets.put("stylesheets/index.css")
-@assets.put("javascript/index.js", "footer")
+@ui.utils.addCss("stylesheets/index.css")
+@ui.utils.addScript("javascript/index.js")
+@ui.utils.assign("title", "Home Page")
 
-@main("List User") {
+@ui.templates.main {
 	@if(flash.containsKey("success")){
 	<div class="alert alert-success alert-dismissable">
 	    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -27,6 +28,6 @@
     }
     
     @if(pager != null){
-    	@assets.pager(pager, routes.UserCtr.list(_))
+    	@ui.utils.pager(pager, routes.UserCtr.list(_))
     }
 }
