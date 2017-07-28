@@ -1,12 +1,12 @@
-package vn.fabrica.mappers;
+package vn.fabrica.dao;
 
-import vn.fabrica.models.User;
+import vn.fabrica.dto.User;
 import vn.fabrica.utils.PagerUtil;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
-public interface UserMapper {
+public interface UserDAO {
 	
 	public int count();
 	

@@ -1,4 +1,4 @@
-package vn.fabrica.models;
+package vn.fabrica.dto;
 
 import java.util.Date;
 

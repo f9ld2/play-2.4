@@ -5,8 +5,8 @@ import play.api.libs.json.Json;
 import play.data.Form;
 import play.mvc.*;
 import views.html.ui.user.*;
-import vn.fabrica.mappers.UserMapper;
-import vn.fabrica.models.User;
+import vn.fabrica.dao.UserDAO;
+import vn.fabrica.dto.User;
 import vn.fabrica.utils.MessageUtil;
 import vn.fabrica.utils.PagerUtil;
 import views.html.helper.form;
@@ -23,7 +23,7 @@ import play.data.FormFactory;
 
 public class UserController extends Controller {
 	@Inject
-    private UserMapper userService;
+    private UserDAO userDAO;
 	
 	@Inject
 	private FormFactory formFactory;
@@ -37,11 +37,11 @@ public class UserController extends Controller {
 	
     public Result list(int page) {
     	List<User> users = null;
-    	int totalCount = userService.count();
+    	int totalCount = userDAO.count();
     	
     	if(totalCount>0){
     		pager.init(page, totalCount);
-    		users = userService.all(pager);
+    		users = userDAO.all(pager);
     	}
     	
         return ok(list.render(users, pager));
@@ -59,14 +59,14 @@ public class UserController extends Controller {
         }
 
         User user = userForm.get();
-        userService.insert(user);
+        userDAO.insert(user);
         
         flash("success", MessageUtil.at("alert.success.created", "User", user.getFullname()));
         return GO_HOME;
     }
     
     public Result edit(int id) {
-    	User user = userService.getUserById(id);
+    	User user = userDAO.getUserById(id);
     	
     	if(user == null){
     		return notFound(MessageUtil.at("alert.fail.find.not_exist", "User", id));
@@ -83,7 +83,7 @@ public class UserController extends Controller {
         	return badRequest(editForm.render(id, userForm));
         } else {
         	User user = userForm.get();
-        	userService.update(id, user);
+        	userDAO.update(id, user);
         	
         	flash("success", MessageUtil.at("alert.success.updated", "User", user.getFullname()));
         	return GO_HOME;
@@ -91,12 +91,12 @@ public class UserController extends Controller {
     }
     
     public Result delete(int id) {
-    	User user = userService.getUserById(id);
+    	User user = userDAO.getUserById(id);
     	if(user == null){
     		return notFound(MessageUtil.at("alert.fail.find.not_exist", "User", id));
     	}
     	
-    	userService.delete(id);
+    	userDAO.delete(id);
     	flash("success", MessageUtil.at("alert.success.deleted", "User"));
     	
     	return GO_HOME;
