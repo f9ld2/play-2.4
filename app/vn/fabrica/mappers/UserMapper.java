@@ -1,7 +1,8 @@
-package service;
+package vn.fabrica.mappers;
 
-import model.User;
-import utils.Pager;
+import vn.fabrica.models.User;
+import vn.fabrica.utils.PagerUtil;
+
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -9,7 +10,7 @@ public interface UserMapper {
 	
 	public int count();
 	
-	public List<User> all(@Param("pager") Pager pager);
+	public List<User> all(@Param("pager") PagerUtil pager);
 
     public User getUserById(Integer id);
     

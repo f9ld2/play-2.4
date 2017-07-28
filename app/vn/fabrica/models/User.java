@@ -1,4 +1,4 @@
-package model;
+package vn.fabrica.models;
 
 import java.util.Date;
 

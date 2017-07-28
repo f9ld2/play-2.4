@@ -1,4 +1,4 @@
-package utils;
+package vn.fabrica.utils;
 
 import org.apache.http.client.utils.URIBuilder;
 import java.net.URISyntaxException;
@@ -8,7 +8,7 @@ import play.mvc.Http;
 import play.Play;
 
 @SuppressWarnings("deprecation")
-public class Pager {
+public class PagerUtil {
 	private int page;
 
     private int pageSize;

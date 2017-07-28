@@ -1,12 +1,15 @@
-package controllers;
+package vn.fabrica.controllers;
 
 import play.*;
 import play.api.libs.json.Json;
 import play.data.Form;
 import play.mvc.*;
 import views.html.ui.user.*;
+import vn.fabrica.mappers.UserMapper;
+import vn.fabrica.models.User;
+import vn.fabrica.utils.MessageUtil;
+import vn.fabrica.utils.PagerUtil;
 import views.html.helper.form;
-import model.User;
 
 import java.util.HashMap;
 import java.util.List;
@@ -15,16 +18,10 @@ import java.util.Map;
 import javax.inject.Inject;
 import com.google.gson.Gson;
 
-import utils.Messages;
-import utils.Pager;
-import service.UserMapper;
+import controllers.routes;
 import play.data.FormFactory;
 
-/**
- * @author hoang-hd
- *
- */
-public class UserCtr extends Controller {
+public class UserController extends Controller {
 	@Inject
     private UserMapper userService;
 	
@@ -32,10 +29,10 @@ public class UserCtr extends Controller {
 	private FormFactory formFactory;
 	
 	@Inject
-	private Pager pager;
+	private PagerUtil pager;
 	
 	private Result GO_HOME = Results.redirect(
-         routes.UserCtr.list(1)
+		vn.fabrica.controllers.routes.UserController.list(1)
 	);
 	
     public Result list(int page) {
@@ -64,7 +61,7 @@ public class UserCtr extends Controller {
         User user = userForm.get();
         userService.insert(user);
         
-        flash("success", Messages.at("alert.success.created", "User", user.getFullname()));
+        flash("success", MessageUtil.at("alert.success.created", "User", user.getFullname()));
         return GO_HOME;
     }
     
@@ -72,7 +69,7 @@ public class UserCtr extends Controller {
     	User user = userService.getUserById(id);
     	
     	if(user == null){
-    		return notFound(Messages.at("alert.fail.find.not_exist", "User", id));
+    		return notFound(MessageUtil.at("alert.fail.find.not_exist", "User", id));
     	}
     	
     	Form<User> userForm = formFactory.form(User.class).fill(user);
@@ -88,7 +85,7 @@ public class UserCtr extends Controller {
         	User user = userForm.get();
         	userService.update(id, user);
         	
-        	flash("success", Messages.at("alert.success.updated", "User", user.getFullname()));
+        	flash("success", MessageUtil.at("alert.success.updated", "User", user.getFullname()));
         	return GO_HOME;
         }
     }
@@ -96,11 +93,11 @@ public class UserCtr extends Controller {
     public Result delete(int id) {
     	User user = userService.getUserById(id);
     	if(user == null){
-    		return notFound(Messages.at("alert.fail.find.not_exist", "User", id));
+    		return notFound(MessageUtil.at("alert.fail.find.not_exist", "User", id));
     	}
     	
     	userService.delete(id);
-    	flash("success", Messages.at("alert.success.deleted", "User"));
+    	flash("success", MessageUtil.at("alert.success.deleted", "User"));
     	
     	return GO_HOME;
     }

@@ -1,4 +1,4 @@
-@(users: List[model.User], pager: utils.Pager)
+@(users: List[vn.fabrica.models.User], pager: vn.fabrica.utils.PagerUtil)
 @ui.utils.addCss("stylesheets/index.css")
 @ui.utils.addScript("javascript/index.js")
 @ui.utils.assign("title", "Home Page")
@@ -18,16 +18,16 @@
 	</div>
 	}
 
-	<a href="@routes.UserCtr.create()">create</a><br/>
+	<a href="@vn.fabrica.controllers.routes.UserController.create()">create</a><br/>
 	@if(users !=null && !users.isEmpty()) {
         <ul>
             @for(user <- users) {
-                <li>@user.getId() - @user.getFullname() - @user.getEmail() - @user.getPhone() - @user.getBirthday().format("yyyy/MM/dd") - @user.getDateAdded().format("yyyy/MM/dd") <a href="@routes.UserCtr.update(user.getId())">edit</a> | <a href="@routes.UserCtr.delete(user.getId())">delete</a></li>
+                <li>@user.getId() - @user.getFullname() - @user.getEmail() - @user.getPhone() - @user.getBirthday().format("yyyy/MM/dd") - @user.getDateAdded().format("yyyy/MM/dd") <a href="@vn.fabrica.controllers.routes.UserController.update(user.getId())">edit</a> | <a href="@vn.fabrica.controllers.routes.UserController.delete(user.getId())">delete</a></li>
             }
         </ul>
     }
     
     @if(pager != null){
-    	@ui.utils.pager(pager, routes.UserCtr.list(_))
+    	@ui.utils.pager(pager, vn.fabrica.controllers.routes.UserController.list(_))
     }
 }

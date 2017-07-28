@@ -3,19 +3,19 @@
 # ~~~~
 
 # Home page
-GET     /                   	controllers.UserCtr.list(page:Int=1)
-GET     /:page                  controllers.UserCtr.list(page:Int)
+GET     /                   	vn.fabrica.controllers.UserController.list(page:Int=1)
+GET     /:page                  vn.fabrica.controllers.UserController.list(page:Int)
 
 # Add user
-GET     /users/new              controllers.UserCtr.create()
-POST    /users                  controllers.UserCtr.save()
+GET     /users/new              vn.fabrica.controllers.UserController.create()
+POST    /users                  vn.fabrica.controllers.UserController.save()
 
 # Edit existing user
-GET     /users/:id              controllers.UserCtr.edit(id:Int)
-POST    /users/:id              controllers.UserCtr.update(id:Int)
+GET     /users/:id              vn.fabrica.controllers.UserController.edit(id:Int)
+POST    /users/:id              vn.fabrica.controllers.UserController.update(id:Int)
 
 # Delete a computer
-GET /users/:id/delete 			controllers.UserCtr.delete(id:Int)
+GET /users/:id/delete 			vn.fabrica.controllers.UserController.delete(id:Int)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

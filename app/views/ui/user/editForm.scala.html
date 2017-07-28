@@ -1,11 +1,11 @@
-@(id: Int, userForm: Form[model.User])
+@(id: Int, userForm: Form[vn.fabrica.models.User])
 @ui.utils.addCss("stylesheets/index.css")
 @ui.utils.addScript("javascript/index.js")
 
 @import helper._
 
 @ui.templates.main {
-	@form(action = routes.UserCtr.update(id)) {
+	@form(action = vn.fabrica.controllers.routes.UserController.update(id)) {
 		@inputForm(userForm)
 	}
 }

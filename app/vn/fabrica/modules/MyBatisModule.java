@@ -1,4 +1,4 @@
-package modules;
+package vn.fabrica.modules;
 
 import com.google.inject.name.Names;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
@@ -21,7 +21,7 @@ public class MyBatisModule extends org.mybatis.guice.MyBatisModule {
         bindDataSourceProviderType(PlayDataSourceProvider.class);
         bindTransactionFactoryType(JdbcTransactionFactory.class);
         mapUnderscoreToCamelCase(true);
-        addMapperClasses("service");
+        addMapperClasses("vn.fabrica.mappers");
     }
 
     /* Provides a {@link DataSource} from the {@link Database} which can be injected from Play. */
