@@ -1,4 +1,7 @@
 @(userForm: Form[vn.fabrica.models.User])
+
+@import views.html.helper.FieldConstructor
+@implicitFieldConstructor = @{ FieldConstructor(ui.utils.helper.FieldConstructor.f) }
 @import helper._
 
 @CSRF.formField
@@ -7,3 +10,40 @@
 @inputText(userForm("phone"))
 @inputText(userForm("email"))
 <button id="submit" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+
+<br/><br/><br/>
+@checkbox(userForm("phone"), '_text -> "Text")
+
+@ui.utils.helper.inputCheckboxGroup(
+     userForm("hobbies"),
+     options = Seq("S" -> "Surfing", "R" -> "Running", "B" -> "Biking","P" -> "Paddling"),
+     '_label -> "Hobbies",
+     '_error -> userForm("hobbies").error.map(_.withMessage("select one or more hobbies")))
+
+@inputDate(userForm("releaseDate"), args = 'size -> 10)
+
+@inputFile(userForm("name"), args = 'size -> 10)
+
+@inputPassword(userForm("password"), args = 'size -> 10)
+
+@ui.utils.helper.inputRadioGroup(
+    userForm("gender"),
+    options = Seq("M"->"Male","F"->"Female"),
+    '_label -> "Gender",
+    '_error -> userForm("gender").error.map(_.withMessage("select gender")))
+    
+@inputText(userForm("name"), args = 'size -> 10, 'placeholder -> "Your name")
+
+@select(
+    userForm("mySelect"),
+    options = Seq(
+      "Foo" -> "foo text",
+      "Bar" -> "bar text",
+      "Baz" -> "baz text"
+     ),
+    '_default -> "Choose One",
+    '_disabled -> Seq("FooKey", "BazKey"),
+    'cust_att_name -> "cust_att_value"
+  )
+  
+@textarea(userForm("address"), args = 'rows -> 3, 'cols -> 50)

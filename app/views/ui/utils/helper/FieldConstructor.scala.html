@@ -1,0 +1,16 @@
+@(elements: helper.FieldElements)
+
+<div class="form-group @elements.args.get('_class) @if(elements.hasErrors) {error}" id="@elements.args.get('_id).getOrElse(elements.id + "_field")">
+    @if(elements.hasName) {
+    	@elements.name
+    } else {
+    	<label for="@elements.id">@elements.label</label>
+    }
+    @elements.input
+    @elements.errors.map { error =>
+        <span class="error">@error</span>
+    }
+    @elements.infos.map { info =>
+        <span class="info">@info</span>
+    }
+</div>

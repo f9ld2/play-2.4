@@ -1,41 +1,57 @@
-2017-07-28 14:05:13,787 [INFO] from application in scala-execution-context-global-74 - Creating Pool for datasource 'default'
-2017-07-28 14:05:13,803 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-74 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2017-07-28 14:05:14,400 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-74 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2017-07-28 14:05:14,614 [WARN] from application in scala-execution-context-global-74 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-07-28 14:05:14,724 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-74 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-07-28 14:51:35,693 [INFO] from application in scala-execution-context-global-65 - Creating Pool for datasource 'default'
+2017-07-28 14:51:35,712 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-65 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 14:51:36,293 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-65 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 14:51:36,622 [WARN] from application in scala-execution-context-global-65 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 14:51:36,938 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-65 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 14:51:37,081 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-65 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2017-07-28 14:05:14,998 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-2 - 
+2017-07-28 14:51:37,085 [INFO] from play.api.Play in scala-execution-context-global-65 - Application started (Dev)
+2017-07-28 14:51:37,091 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-5 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 14:51:37,497 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-5 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 14:56:29,987 [INFO] from application in scala-execution-context-global-3098 - Shutting down connection pool.
+2017-07-28 14:56:30,120 [INFO] from application in scala-execution-context-global-3098 - Creating Pool for datasource 'default'
+2017-07-28 14:56:30,121 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-3098 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 14:56:30,461 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-3098 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 14:56:30,478 [WARN] from application in scala-execution-context-global-3098 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 14:56:30,517 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-3098 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 14:56:30,550 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3098 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
-! @74nh3n11h - Internal server error, for (GET) [/users/124] ->
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 14:56:30,550 [INFO] from play.api.Play in scala-execution-context-global-3098 - Application started (Dev)
+2017-07-28 14:56:30,552 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 14:56:30,592 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 14:58:16,652 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-21 - 
+
+! @74nham1k8 - Internal server error, for (GET) [/users/new] ->
  
-play.api.UnexpectedException: Unexpected exception[ProvisionException: Unable to provision, see the following errors:
-
-1) No implementation for vn.fabrica.mappers.UserMapper was bound.
-  while locating vn.fabrica.mappers.UserMapper
-    for field at vn.fabrica.controllers.UserController.userService(UserController.java:24)
-  while locating vn.fabrica.controllers.UserController
-    for the 2nd parameter of router.Routes.<init>(Routes.scala:31)
-  while locating router.Routes
-  while locating play.api.inject.RoutesProvider
-  while locating play.api.routing.Router
-    for the 1st parameter of play.api.http.JavaCompatibleHttpRequestHandler.<init>(HttpRequestHandler.scala:222)
-  while locating play.api.http.JavaCompatibleHttpRequestHandler
-  while locating play.api.http.HttpRequestHandler
-    for the 6th parameter of play.api.DefaultApplication.<init>(Application.scala:236)
-  at play.api.DefaultApplication.class(Application.scala:235)
-  while locating play.api.DefaultApplication
-  while locating play.api.Application
-
-1 error]
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$3(DevServerStart.scala:183)
-	at scala.Option.map(Option.scala:146)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$2(DevServerStart.scala:133)
-	at scala.util.Success.flatMap(Try.scala:247)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:131)
+play.sbt.PlayExceptions$CompilationException: Compilation error[')' expected but symbol literal found.]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
 	at scala.util.Success.$anonfun$map$1(Try.scala:251)
 	at scala.util.Success.map(Try.scala:209)
@@ -48,72 +64,1020 @@ play.api.UnexpectedException: Unexpected exception[ProvisionException: Unable to
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-Caused by: com.google.inject.ProvisionException: Unable to provision, see the following errors:
+2017-07-28 14:59:19,318 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-21 - 
 
-1) No implementation for vn.fabrica.mappers.UserMapper was bound.
-  while locating vn.fabrica.mappers.UserMapper
-    for field at vn.fabrica.controllers.UserController.userService(UserController.java:24)
-  while locating vn.fabrica.controllers.UserController
-    for the 2nd parameter of router.Routes.<init>(Routes.scala:31)
-  while locating router.Routes
-  while locating play.api.inject.RoutesProvider
-  while locating play.api.routing.Router
-    for the 1st parameter of play.api.http.JavaCompatibleHttpRequestHandler.<init>(HttpRequestHandler.scala:222)
-  while locating play.api.http.JavaCompatibleHttpRequestHandler
-  while locating play.api.http.HttpRequestHandler
-    for the 6th parameter of play.api.DefaultApplication.<init>(Application.scala:236)
-  at play.api.DefaultApplication.class(Application.scala:235)
-  while locating play.api.DefaultApplication
-  while locating play.api.Application
+! @74nhapge3 - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[')' expected but symbol literal found.]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 14:59:20,299 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-21 - 
 
-1 error
-	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1028)
-	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1054)
-	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:409)
-	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:404)
-	at play.api.inject.ContextClassLoaderInjector.$anonfun$instanceOf$2(Injector.scala:117)
-	at play.api.inject.ContextClassLoaderInjector.withContext(Injector.scala:126)
-	at play.api.inject.ContextClassLoaderInjector.instanceOf(Injector.scala:117)
-	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:137)
-	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$6(DevServerStart.scala:171)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$3(DevServerStart.scala:168)
-	... 16 common frames omitted
-2017-07-28 14:06:08,055 [INFO] from application in scala-execution-context-global-679 - Shutting down connection pool.
-2017-07-28 14:06:08,200 [INFO] from application in scala-execution-context-global-679 - Creating Pool for datasource 'default'
-2017-07-28 14:06:08,201 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-679 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2017-07-28 14:06:08,533 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-679 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-2017-07-28 14:06:08,640 [WARN] from application in scala-execution-context-global-679 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-07-28 14:06:08,770 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-679 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-07-28 14:06:08,870 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-679 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+! @74nhaphpl - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[')' expected but symbol literal found.]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 14:59:20,634 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-21 - 
+
+! @74nhapicj - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[')' expected but symbol literal found.]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 14:59:20,892 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-16 - 
+
+! @74nhapimh - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[')' expected but symbol literal found.]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 14:59:40,176 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-21 - 
+
+! @74nhb0la8 - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[too many arguments (2) for method apply: (x$1: String)play.data.Form.Field in class Form]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 14:59:41,593 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-21 - 
+
+! @74nhb0ncl - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[too many arguments (2) for method apply: (x$1: String)play.data.Form.Field in class Form]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 14:59:42,169 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-20 - 
+
+! @74nhb0o90 - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[too many arguments (2) for method apply: (x$1: String)play.data.Form.Field in class Form]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:00:48,025 [INFO] from application in scala-execution-context-global-5979 - Shutting down connection pool.
+2017-07-28 15:00:48,179 [INFO] from application in scala-execution-context-global-5979 - Creating Pool for datasource 'default'
+2017-07-28 15:00:48,180 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-5979 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:00:48,521 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-5979 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:00:48,536 [WARN] from application in scala-execution-context-global-5979 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:00:48,575 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-5979 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:00:48,605 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-5979 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2017-07-28 14:06:08,873 [INFO] from play.api.Play in scala-execution-context-global-679 - Application started (Dev)
-2017-07-28 14:06:08,876 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-07-28 14:06:09,107 [DEBUG] from vn.fabrica.mappers.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-2 - ==>  Preparing: SELECT * FROM users WHERE id = ? 
-2017-07-28 14:06:09,139 [DEBUG] from vn.fabrica.mappers.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-2 - ==> Parameters: 124(Integer)
-2017-07-28 14:06:09,179 [DEBUG] from vn.fabrica.mappers.UserMapper.getUserById in play-dev-mode-akka.actor.default-dispatcher-2 - <==      Total: 1
-2017-07-28 14:06:09,364 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-07-28 14:06:15,864 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-07-28 14:06:15,914 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-10 - ==>  Preparing: SELECT COUNT(*) FROM users 
-2017-07-28 14:06:15,914 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-10 - ==> Parameters: 
-2017-07-28 14:06:15,938 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-10 - <==      Total: 1
-2017-07-28 14:06:16,013 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-10 - ==>  Preparing: SELECT * FROM users ORDER BY id LIMIT ?, ? 
-2017-07-28 14:06:16,014 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-10 - ==> Parameters: 120(Integer), 20(Integer)
-2017-07-28 14:06:16,043 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-10 - <==      Total: 20
-2017-07-28 14:06:18,466 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-8 - ==>  Preparing: SELECT COUNT(*) FROM users 
-2017-07-28 14:06:18,466 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-8 - ==> Parameters: 
-2017-07-28 14:06:18,487 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-8 - <==      Total: 1
-2017-07-28 14:06:18,530 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-8 - ==>  Preparing: SELECT * FROM users ORDER BY id LIMIT ?, ? 
-2017-07-28 14:06:18,530 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-8 - ==> Parameters: 100(Integer), 20(Integer)
-2017-07-28 14:06:18,556 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-8 - <==      Total: 20
-2017-07-28 14:06:20,476 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-10 - ==>  Preparing: SELECT COUNT(*) FROM users 
-2017-07-28 14:06:20,476 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-10 - ==> Parameters: 
-2017-07-28 14:06:20,498 [DEBUG] from vn.fabrica.mappers.UserMapper.count in play-dev-mode-akka.actor.default-dispatcher-10 - <==      Total: 1
-2017-07-28 14:06:20,541 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-10 - ==>  Preparing: SELECT * FROM users ORDER BY id LIMIT ?, ? 
-2017-07-28 14:06:20,541 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-10 - ==> Parameters: 80(Integer), 20(Integer)
-2017-07-28 14:06:20,566 [DEBUG] from vn.fabrica.mappers.UserMapper.all in play-dev-mode-akka.actor.default-dispatcher-10 - <==      Total: 20
+2017-07-28 15:00:48,606 [INFO] from play.api.Play in scala-execution-context-global-5979 - Application started (Dev)
+2017-07-28 15:00:48,607 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-20 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:00:48,645 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-20 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:02:39,795 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-17 - 
+
+! @74nhbb12j - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Not parsed?]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:02:49,334 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-17 - 
+
+! @74nhbbf5g - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Not parsed?]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:02:50,136 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-26 - 
+
+! @74nhbbgad - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Not parsed?]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:02:50,399 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-17 - 
+
+! @74nhbbgkf - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Not parsed?]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:02:50,577 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-28 - 
+
+! @74nhbbh1c - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Not parsed?]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:03:08,463 [INFO] from application in scala-execution-context-global-7576 - Shutting down connection pool.
+2017-07-28 15:03:08,572 [INFO] from application in scala-execution-context-global-7576 - Creating Pool for datasource 'default'
+2017-07-28 15:03:08,573 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-7576 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:03:08,924 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-7576 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:03:08,939 [WARN] from application in scala-execution-context-global-7576 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:03:08,974 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-7576 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:03:09,001 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-7576 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:03:09,001 [INFO] from play.api.Play in scala-execution-context-global-7576 - Application started (Dev)
+2017-07-28 15:03:09,003 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:03:09,045 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:04:22,120 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-15 - 
+
+! @74nhbgmc8 - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: type FieldConstructor]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:04:48,481 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-16 - 
+
+! @74nhbi9c6 - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value input]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:04:50,173 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-16 - 
+
+! @74nhbibp7 - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value input]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:05:13,937 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-28 - 
+
+! @74nhbjl37 - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[reference to options is ambiguous;
+it is both defined in method apply and imported subsequently by 
+import helper._]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:05:15,552 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-16 - 
+
+! @74nhbjnda - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[reference to options is ambiguous;
+it is both defined in method apply and imported subsequently by 
+import helper._]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:05:37,627 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-28 - 
+
+! @74nhbl44c - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value map is not a member of object views.html.helper.options]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:05:39,104 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-28 - 
+
+! @74nhbl696 - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value map is not a member of object views.html.helper.options]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:05:51,072 [INFO] from application in scala-execution-context-global-9455 - Shutting down connection pool.
+2017-07-28 15:05:51,163 [INFO] from application in scala-execution-context-global-9455 - Creating Pool for datasource 'default'
+2017-07-28 15:05:51,163 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-9455 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:05:51,491 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-9455 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:05:51,504 [WARN] from application in scala-execution-context-global-9455 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:05:51,539 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9455 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:05:51,566 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9455 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:05:51,567 [INFO] from play.api.Play in scala-execution-context-global-9455 - Application started (Dev)
+2017-07-28 15:05:51,568 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:05:51,603 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:05:58,433 [INFO] from application in scala-execution-context-global-9476 - Shutting down connection pool.
+2017-07-28 15:05:58,515 [INFO] from application in scala-execution-context-global-9476 - Creating Pool for datasource 'default'
+2017-07-28 15:05:58,515 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-9476 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:05:58,844 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-9476 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:05:58,857 [WARN] from application in scala-execution-context-global-9476 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:05:58,887 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9476 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:05:58,911 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9476 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:05:58,911 [INFO] from play.api.Play in scala-execution-context-global-9476 - Application started (Dev)
+2017-07-28 15:05:58,912 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-37 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:05:58,946 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-37 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:06:19,101 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:06:55,383 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:06:55,383 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-36 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:07:01,387 [INFO] from application in scala-execution-context-global-10161 - Shutting down connection pool.
+2017-07-28 15:07:01,461 [INFO] from application in scala-execution-context-global-10161 - Creating Pool for datasource 'default'
+2017-07-28 15:07:01,461 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-10161 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:07:01,791 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-10161 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:07:01,804 [WARN] from application in scala-execution-context-global-10161 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:07:01,833 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-10161 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:07:01,859 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-10161 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:07:01,860 [INFO] from play.api.Play in scala-execution-context-global-10161 - Application started (Dev)
+2017-07-28 15:07:01,861 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-31 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:07:01,896 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-31 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:08:04,212 [INFO] from application in scala-execution-context-global-10880 - Shutting down connection pool.
+2017-07-28 15:08:04,285 [INFO] from application in scala-execution-context-global-10880 - Creating Pool for datasource 'default'
+2017-07-28 15:08:04,285 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-10880 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:08:04,622 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-10880 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:08:04,634 [WARN] from application in scala-execution-context-global-10880 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:08:04,663 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-10880 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:08:04,688 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-10880 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:08:04,689 [INFO] from play.api.Play in scala-execution-context-global-10880 - Application started (Dev)
+2017-07-28 15:08:04,690 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-17 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:08:04,728 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-17 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:25:38,195 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m3s409ms).
+2017-07-28 15:25:59,551 [INFO] from application in scala-execution-context-global-18750 - Shutting down connection pool.
+2017-07-28 15:25:59,713 [INFO] from application in scala-execution-context-global-18750 - Creating Pool for datasource 'default'
+2017-07-28 15:25:59,713 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-18750 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:26:00,057 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-18750 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:26:00,068 [WARN] from application in scala-execution-context-global-18750 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:26:00,115 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-18750 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:26:00,139 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-18750 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:26:00,140 [INFO] from play.api.Play in scala-execution-context-global-18750 - Application started (Dev)
+2017-07-28 15:26:00,140 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-40 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:26:00,210 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-40 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:27:29,250 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-40 - 
+
+! @74nhehkbd - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[not found: type FieldConstructor]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:27:52,691 [INFO] from application in scala-execution-context-global-19987 - Shutting down connection pool.
+2017-07-28 15:27:52,761 [INFO] from application in scala-execution-context-global-19987 - Creating Pool for datasource 'default'
+2017-07-28 15:27:52,762 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-19987 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:27:53,093 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-19987 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:27:53,103 [WARN] from application in scala-execution-context-global-19987 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:27:53,132 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-19987 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:27:53,153 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-19987 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:27:53,153 [INFO] from play.api.Play in scala-execution-context-global-19987 - Application started (Dev)
+2017-07-28 15:27:53,154 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-40 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:27:53,192 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-40 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:28:40,480 [INFO] from application in scala-execution-context-global-20506 - Shutting down connection pool.
+2017-07-28 15:28:40,544 [INFO] from application in scala-execution-context-global-20506 - Creating Pool for datasource 'default'
+2017-07-28 15:28:40,545 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-20506 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:28:40,875 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-20506 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:28:40,885 [WARN] from application in scala-execution-context-global-20506 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:28:40,911 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-20506 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:28:40,932 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-20506 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:28:40,932 [INFO] from play.api.Play in scala-execution-context-global-20506 - Application started (Dev)
+2017-07-28 15:28:40,933 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-52 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:28:40,979 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-52 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:30:02,294 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-28 - 
+
+! @74nhf0cll - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[')' expected but symbol literal found.]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:30:03,282 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-40 - 
+
+! @74nhf0e7l - Internal server error, for (GET) [/users/new] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[')' expected but symbol literal found.]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2017-07-28 15:30:20,126 [INFO] from application in scala-execution-context-global-21607 - Shutting down connection pool.
+2017-07-28 15:30:20,184 [INFO] from application in scala-execution-context-global-21607 - Creating Pool for datasource 'default'
+2017-07-28 15:30:20,184 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-21607 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:30:20,513 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-21607 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:30:20,523 [WARN] from application in scala-execution-context-global-21607 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:30:20,550 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-21607 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:30:20,571 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-21607 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:30:20,571 [INFO] from play.api.Play in scala-execution-context-global-21607 - Application started (Dev)
+2017-07-28 15:30:20,572 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:30:20,623 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:16,306 [INFO] from application in scala-execution-context-global-22202 - Shutting down connection pool.
+2017-07-28 15:31:16,364 [INFO] from application in scala-execution-context-global-22202 - Creating Pool for datasource 'default'
+2017-07-28 15:31:16,364 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-22202 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:31:16,694 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-22202 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:31:16,706 [WARN] from application in scala-execution-context-global-22202 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:16,733 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-22202 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:31:16,755 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-22202 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:31:16,755 [INFO] from play.api.Play in scala-execution-context-global-22202 - Application started (Dev)
+2017-07-28 15:31:16,756 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-45 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:16,796 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-45 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:31,651 [INFO] from application in scala-execution-context-global-22217 - Shutting down connection pool.
+2017-07-28 15:31:31,706 [INFO] from application in scala-execution-context-global-22217 - Creating Pool for datasource 'default'
+2017-07-28 15:31:31,707 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-22217 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:31:32,034 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-22217 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:31:32,044 [WARN] from application in scala-execution-context-global-22217 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:32,099 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-22217 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:31:32,121 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-22217 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:31:32,121 [INFO] from play.api.Play in scala-execution-context-global-22217 - Application started (Dev)
+2017-07-28 15:31:32,122 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-47 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:32,157 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-47 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:46,936 [INFO] from application in scala-execution-context-global-22571 - Shutting down connection pool.
+2017-07-28 15:31:46,994 [INFO] from application in scala-execution-context-global-22571 - Creating Pool for datasource 'default'
+2017-07-28 15:31:46,995 [WARN] from com.zaxxer.hikari.util.DriverDataSource in scala-execution-context-global-22571 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2017-07-28 15:31:47,324 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-22571 - Database [default] connected at jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2017-07-28 15:31:47,333 [WARN] from application in scala-execution-context-global-22571 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:47,366 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-22571 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-07-28 15:31:47,389 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-22571 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-07-28 15:31:47,389 [INFO] from play.api.Play in scala-execution-context-global-22571 - Application started (Dev)
+2017-07-28 15:31:47,390 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-52 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-07-28 15:31:47,432 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-52 - application.conf @ file:/Users/hoang-hd/Working/play-2.6/target/scala-2.12/classes/application.conf: 11: play.crypto.secret is deprecated, use play.http.secret.key instead
