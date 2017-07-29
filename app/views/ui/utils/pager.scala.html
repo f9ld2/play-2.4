@@ -1,23 +1,23 @@
-@(oPager: vn.fabrica.utils.PagerUtil, route:Int => Call)
+@(pagerUtil: vn.fabrica.utils.PagerUtil, route:Int => Call)
 <div class="pb_centered">
     <div class="pagination">
         <ul>
-        	@if(oPager.getPage() != 1){
-        		<li><a href="@oPager.makeUrl(route(1).url)">&lt;&lt;</a></li>
-        		<li><a href="@oPager.makeUrl(route(oPager.getPage()-1).url)">&lt;</a></li>
+        	@if(pagerUtil.getPage() != 1){
+        		<li><a href="@pagerUtil.makeUrl(route(1).url)">&lt;&lt;</a></li>
+        		<li><a href="@pagerUtil.makeUrl(route(pagerUtil.getPage()-1).url)">&lt;</a></li>
         	}
             
-            @for( i <- oPager.getStart() to oPager.getEnd()){
-		         @if(i == oPager.getPage()){
+            @for( i <- pagerUtil.getStart() to pagerUtil.getEnd()){
+		         @if(i == pagerUtil.getPage()){
 		         	<li>[@i]</li>
 		         } else {
-		         	<li><a href="@oPager.makeUrl(route(i).url)">@i</a></li>
+		         	<li><a href="@pagerUtil.makeUrl(route(i).url)">@i</a></li>
 		         }
 		    }
       
-			@if(oPager.getPageCount() != oPager.getPage()){
-        		<li><a href="@oPager.makeUrl(route(oPager.getPage()+1).url)">&gt;</a></li>
-        		<li><a href="@oPager.makeUrl(route(oPager.getPageCount()).url)">&gt;&gt;</a></li>
+			@if(pagerUtil.getPageCount() != pagerUtil.getPage()){
+        		<li><a href="@pagerUtil.makeUrl(route(pagerUtil.getPage()+1).url)">&gt;</a></li>
+        		<li><a href="@pagerUtil.makeUrl(route(pagerUtil.getPageCount()).url)">&gt;&gt;</a></li>
 			}
         </ul>
     </div>
