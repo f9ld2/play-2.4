@@ -23,10 +23,10 @@ import play.data.FormFactory;
 
 public class UserController extends Controller {
 	@Inject
-    private UserDAO userDAO;
+	private FormFactory formFactory;
 	
 	@Inject
-	private FormFactory formFactory;
+    private UserDAO userDAO;
 	
 	@Inject
 	private PagerUtil pager;
