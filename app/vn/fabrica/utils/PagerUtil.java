@@ -3,11 +3,10 @@ package vn.fabrica.utils;
 import org.apache.http.client.utils.URIBuilder;
 import java.net.URISyntaxException;
 import java.util.HashMap;
-import java.util.Map;
+import javax.inject.Inject;
 import play.mvc.Http;
-import play.Play;
+import java.util.Map;
 
-@SuppressWarnings("deprecation")
 public class PagerUtil {
 	private int page;
 
@@ -27,12 +26,15 @@ public class PagerUtil {
     
     private int end;
     
+    @Inject
+    private play.api.Configuration cf;
+    
     public void init(int page, int totalCount) {
         this.init(
     		page, 
     		totalCount, 
-    		Play.application().configuration().getInt("setting.pageSize"), 
-    		Play.application().configuration().getInt("setting.frameSize")
+    		cf.underlying().getInt("setting.pageSize"), 
+    		cf.underlying().getInt("setting.frameSize")
 		);
 	}
 	
@@ -41,7 +43,7 @@ public class PagerUtil {
     		page, 
     		totalCount, 
     		pageSize, 
-    		Play.application().configuration().getInt("setting.frameSize")
+    		cf.underlying().getInt("setting.frameSize")
 		);
 	}
 	

@@ -3,8 +3,11 @@ package vn.fabrica.dto;
 import java.util.Date;
 
 import play.data.validation.Constraints;
+import vn.fabrica.validators.BasicDate;
+import vn.fabrica.validators.FieldMatch;
 import play.data.format.Formats;
 
+@FieldMatch(first = "fullname", second = "phone", message = "The password fields must match")
 public class User {
     private Integer id;
     
@@ -14,6 +17,7 @@ public class User {
     @Formats.DateTime(pattern = "yyyy-MM-dd")
     private Date birthday;
     
+    @BasicDate(pattern = "yyyy-MM-dd", fraction = 100)
     private String phone;
     
     @Constraints.Email

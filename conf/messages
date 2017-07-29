@@ -2,3 +2,7 @@ alert.success.created = {0} {1} has been created.
 alert.success.updated = {0} {1} has been updated.
 alert.success.deleted = {0} has been deleted.
 alert.fail.find.not_exist = {0} {1} does not exist.
+
+error.basicdate = error {0} basic date.
+constraint.basicdate = constraint {0}, {1} basic date
+error.fieldmatch  = error {0}, {1} field match.

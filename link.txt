@@ -1,1 +1,10 @@
 https://github.com/playframework/play-java-ebean-example/blob/2.6.x/app/controllers/HomeController.java
+http://beanvalidation.org/1.0/spec/#constraintsdefinitionimplementation-constraintdefinition-properties
+https://github.com/playframework/playframework/blob/master/framework/src/play-java-forms/src/main/java/play/data/validation/Constraints.java
+http://tutorials.jenkov.com/java/enums.html
+https://www.playframework.com/documentation/2.5.x/JavaForms
+https://www.playframework.com/documentation/2.5.x/ScalaForms
+http://grokbase.com/t/gg/play-framework/135p42qqgg/2-1-1-validate-the-password-and-confirmation-passwords-match
+
+Login
+https://github.com/playframework/playframework/issues/5992
