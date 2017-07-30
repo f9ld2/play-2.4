@@ -5,6 +5,21 @@ http://tutorials.jenkov.com/java/enums.html
 https://www.playframework.com/documentation/2.5.x/JavaForms
 https://www.playframework.com/documentation/2.5.x/ScalaForms
 http://grokbase.com/t/gg/play-framework/135p42qqgg/2-1-1-validate-the-password-and-confirmation-passwords-match
+https://stackoverflow.com/questions/22459220/play-framework-2-best-way-of-validating-individual-model-fields-separately
 
 Login
 https://github.com/playframework/playframework/issues/5992
+
+Constraints
+@Required
+@Min(value = 1)
+@Max(value = 100)
+@MinLength(value = 100)
+@MaxLength(value = 100)
+@Email
+@Pattern(value = "\\d{1,6}")
+@ValidateWith()
+
+Formats
+@DateTime(pattern = "yyyy-MM-dd")
+@NonEmpty
