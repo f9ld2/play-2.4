@@ -11,7 +11,7 @@ import play.data.format.Formats;
 public class User {
     private Integer id;
     
-    @Constraints.Required
+    @Constraints.Required(message = "This field is required")
     private String fullname;
     
     @Formats.DateTime(pattern = "yyyy-MM-dd")

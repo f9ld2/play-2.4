@@ -7,6 +7,7 @@ import play.mvc.*;
 import views.html.ui.user.*;
 import vn.fabrica.dao.UserDAO;
 import vn.fabrica.dto.User;
+import vn.fabrica.security.SecurityAuthenticator;
 import vn.fabrica.utils.MessageUtil;
 import vn.fabrica.utils.PagerUtil;
 import views.html.helper.form;
@@ -16,11 +17,10 @@ import java.util.List;
 import java.util.Map;
 
 import javax.inject.Inject;
-import com.google.gson.Gson;
-
 import controllers.routes;
 import play.data.FormFactory;
 
+//@Security.Authenticated(SecurityAuthenticator.class)
 public class UserController extends Controller {
 	@Inject
 	private FormFactory formFactory;
