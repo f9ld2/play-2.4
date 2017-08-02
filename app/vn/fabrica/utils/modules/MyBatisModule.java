@@ -1,4 +1,4 @@
-package vn.fabrica.modules;
+package vn.fabrica.utils.modules;
 
 import com.google.inject.name.Names;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;

@@ -1,4 +1,4 @@
-package vn.fabrica.security;
+package vn.fabrica.utils.security;
 
 import play.mvc.Result;
 import play.mvc.Security;

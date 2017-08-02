@@ -7,7 +7,7 @@ import play.mvc.*;
 import views.html.ui.user.*;
 import vn.fabrica.dao.UserDAO;
 import vn.fabrica.dto.User;
-import vn.fabrica.security.SecurityAuthenticator;
+import vn.fabrica.utils.security.SecurityAuthenticator;
 import vn.fabrica.utils.MessageUtil;
 import vn.fabrica.utils.PagerUtil;
 import views.html.helper.form;
@@ -20,7 +20,7 @@ import javax.inject.Inject;
 import controllers.routes;
 import play.data.FormFactory;
 
-//@Security.Authenticated(SecurityAuthenticator.class)
+@Security.Authenticated(SecurityAuthenticator.class)
 public class UserController extends Controller {
 	@Inject
 	private FormFactory formFactory;
