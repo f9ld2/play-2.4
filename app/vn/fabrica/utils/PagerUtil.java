@@ -6,6 +6,8 @@ import java.util.HashMap;
 import javax.inject.Inject;
 import play.mvc.Http;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class PagerUtil {
 	private int page;
@@ -25,6 +27,10 @@ public class PagerUtil {
     private int start;
     
     private int end;
+    
+    private String sortKey;
+    
+    private String sortType;
     
     @Inject
     private play.api.Configuration cf;
@@ -59,6 +65,22 @@ public class PagerUtil {
         this.lastRow    = Math.min( this.firstRow + this.pageSize, this.totalCount );
         
         this.range();
+        
+        if(Http.Context.current().request().queryString().containsKey("sort")){
+        	Matcher matcher = Pattern.compile("^(\\w+)\\.(asc|desc)$").matcher(
+        		Http.Context.current().request().getQueryString("sort").toLowerCase()
+			);
+        	
+        	if(matcher.matches()){
+        		this.sortKey = matcher.group(1);
+        		this.sortType = matcher.group(2);
+        	}
+        }
+	}
+	
+	public String sort(String id, String title){
+		//https://github.com/cakephp/cakephp/blob/master/src/View/Helper/PaginatorHelper.php#L423
+		return null;
 	}
 	
 	private void range() {
@@ -195,5 +217,21 @@ public class PagerUtil {
 		}
 		
 		return null;
+	}
+
+	public String getSortKey() {
+		return sortKey;
+	}
+
+	public void setSortKey(String sortKey) {
+		this.sortKey = sortKey;
+	}
+
+	public String getSortType() {
+		return sortType;
+	}
+
+	public void setSortType(String sortType) {
+		this.sortType = sortType;
 	}
 }
