@@ -4,9 +4,16 @@
   <classPathEntry location="/Users/hoang-hd/.m2/repository/mysql/mysql-connector-java/5.1.32/mysql-connector-java-5.1.32.jar"/>
   <context id="play26">
     <jdbcConnection connectionURL="jdbc:mysql://db.lo.vn/usedata_blog?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" driverClass="com.mysql.jdbc.Driver" password="Admin@6368" userId="root" />
-    <javaModelGenerator targetPackage="vn.fabrica.dto" targetProject="play26" />
-    <sqlMapGenerator targetPackage="vn.fabrica.mybatis" targetProject="play26" />
-    <javaClientGenerator targetPackage="vn.fabrica.mybatis" targetProject="play26" type="XMLMAPPER" />
+    <javaModelGenerator targetPackage="vn.fabrica.mybatis.dto" targetProject="play26">
+    	<property name="enableSubPackages" value="true" />
+    	<property name="trimStrings" value="true" />
+    </javaModelGenerator>
+    <sqlMapGenerator targetPackage="vn.fabrica.mybatis.dao" targetProject="play26">
+    	<property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+    <javaClientGenerator targetPackage="vn.fabrica.mybatis.dao" targetProject="play26" type="XMLMAPPER">
+    	<property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
     <table tableName="users"/>
   </context>
 </generatorConfiguration>
