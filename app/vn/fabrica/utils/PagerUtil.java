@@ -3,6 +3,8 @@ package vn.fabrica.utils;
 import org.apache.http.client.utils.URIBuilder;
 import java.net.URISyntaxException;
 import java.util.HashMap;
+import java.util.List;
+
 import javax.inject.Inject;
 import play.mvc.Http;
 import java.util.Map;
@@ -79,8 +81,28 @@ public class PagerUtil {
 	}
 	
 	public String sort(String id, String title){
-		//https://github.com/cakephp/cakephp/blob/master/src/View/Helper/PaginatorHelper.php#L423
-		return null;
+		String template = cf.underlying().getString("template.sort");
+		Map<String, String> params = new HashMap<String, String>();
+		params.put("text", title);
+		
+		if(sortKey != null && sortKey.equals(id)){
+			if(sortType.equals("desc")) {
+				template = cf.underlying().getString("template.sortDesc");
+			} else {
+				template = cf.underlying().getString("template.sortAsc");
+			}
+			
+			params.put("url", makeUrl(new HashMap<String, String>(){{
+				put("sort", id + (sortType.equals("desc") ? ".asc" : ".desc") );
+			}}));
+			
+		} else {
+			params.put("url", makeUrl(new HashMap<String, String>(){{
+				put("sort", id + ".asc");
+			}}));
+		}
+		
+		return replace(template, params);
 	}
 	
 	private void range() {
@@ -176,6 +198,24 @@ public class PagerUtil {
 
 	public void setEnd(int end) {
 		this.end = end;
+	}
+	
+	public String replace(String text, List<String> params) {
+		if(params.size()>0){
+			for(int i=0; i<params.size(); i++){
+				text = text.replace("{" + i + "}", params.get(i));
+			}
+		}
+		return text;
+	}
+	
+	public String replace(String text, Map<String, String> params) {
+		if(!params.isEmpty()){
+			for(Map.Entry<String, String> entry : params.entrySet()) {
+				text = text.replace("{" + entry.getKey() + "}", entry.getValue());
+			}
+		}
+		return text;
 	}
 	
 	public String makeUrl(String path){

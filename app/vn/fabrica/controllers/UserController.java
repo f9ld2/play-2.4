@@ -20,7 +20,7 @@ import javax.inject.Inject;
 import controllers.routes;
 import play.data.FormFactory;
 
-@Security.Authenticated(SecurityAuthenticator.class)
+//@Security.Authenticated(SecurityAuthenticator.class)
 public class UserController extends Controller {
 	@Inject
 	private FormFactory formFactory;
@@ -40,10 +40,10 @@ public class UserController extends Controller {
     	int totalCount = userDAO.count();
     	
     	if(totalCount>0){
-    		pager.init(page, totalCount);
     		users = userDAO.all(pager);
     	}
     	
+    	pager.init(page, totalCount);
         return ok(list.render(users, pager));
     }
     

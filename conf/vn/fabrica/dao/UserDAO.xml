@@ -11,7 +11,38 @@
     <select id="all" parameterType="map" resultType="vn.fabrica.dto.User">
         SELECT * 
         FROM users
-        ORDER BY id
+        <if test="pager.sortKey != null and pager.sortType != null">
+		    ORDER BY
+		        <choose>  
+		            <when test="pager.sortKey == 'id'">
+		                id 
+		            </when>         
+		            <when test="pager.sortKey == 'fullname'">
+		                fullname 
+		            </when> 
+		            <when test="pager.sortKey == 'email'">
+		                email 
+		            </when> 
+		            <when test="pager.sortKey == 'phone'">
+		                phone 
+		            </when> 
+		            <when test="pager.sortKey == 'birthday'">
+		                birthday
+		            </when> 
+		            <when test="pager.sortKey == 'date_added'">
+		                date_added
+		            </when>  
+		            <otherwise>
+		            	id
+		            </otherwise>                                                          
+		        </choose>               
+		        <if test="pager.sortType == 'asc'">
+		            ASC 
+		        </if>            
+		        <if test="pager.sortType == 'desc'">
+		            DESC 
+		        </if>   
+		 </if>
         <if test="pager.offset>-1 and pager.pageSize>0">
 		    LIMIT #{pager.offset}, #{pager.pageSize}
 		</if>

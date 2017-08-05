@@ -20,14 +20,31 @@
 
 	<a href="@vn.fabrica.controllers.routes.UserController.create()">create</a><br/>
 	@if(users !=null && !users.isEmpty()) {
-        <ul>
-            @for(user <- users) {
-                <li>@user.getId() - @user.getFullname() - @user.getEmail() - @user.getPhone() - @user.getBirthday().format("yyyy/MM/dd") - @user.getDateAdded().format("yyyy/MM/dd") <a href="@vn.fabrica.controllers.routes.UserController.update(user.getId())">edit</a> | <a href="@vn.fabrica.controllers.routes.UserController.delete(user.getId())">delete</a></li>
+		<table>
+			<tr>
+				<td>@Html(pager.sort("id", "ID"))</td>
+				<td>@Html(pager.sort("fullname", "Fullname"))</td>
+				<td>@Html(pager.sort("email", "Email"))</td>
+				<td>@Html(pager.sort("phone", "Phone"))</td>
+				<td>@Html(pager.sort("birthday", "Birthday"))</td>
+				<td>@Html(pager.sort("date_added", "DateAdded"))</td>
+				<td>Edit</td>
+				<td>Delete</td>
+			</tr>
+			@for(user <- users) {
+				<tr>
+	                <td>@user.getId()</td>
+					<td>@user.getFullname()</td>
+					<td>@user.getEmail()</td>
+					<td>@user.getPhone()</td>
+					<td>@user.getBirthday().format("yyyy/MM/dd")</td>
+					<td>@user.getDateAdded().format("yyyy/MM/dd")</td>
+					<td><a href="@vn.fabrica.controllers.routes.UserController.update(user.getId())">edit</a></td>
+					<td><a href="@vn.fabrica.controllers.routes.UserController.delete(user.getId())">delete</a></td>
+				</tr>
             }
-        </ul>
-    }
-    
-    @if(pager != null){
-    	@ui.utils.pager(pager, vn.fabrica.controllers.routes.UserController.list(_))
+		</table>
+        
+        @ui.utils.pager(pager, vn.fabrica.controllers.routes.UserController.list(_))
     }
 }
